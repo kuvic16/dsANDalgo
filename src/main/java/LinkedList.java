@@ -6,7 +6,36 @@
 /**
  * A linked list is a linear data structure, in which the elements are not stored at
  * contiguous memory locations. The elements in a linked list are linked using
- * pointers.
+ * pointers.In simple words, a linked list consists of nodes where each node contains a data
+ * field and a reference(link) to the next node in the list.
  */
 public class LinkedList {
+    Node head;
+
+    static class Node {
+        int data;
+        Node next;
+
+        Node(int d) {
+            data = d;
+            next = null;
+        }
+    }
+
+    public static LinkedList insert(LinkedList list, int data) {
+        Node new_node = new Node(data);
+        new_node.next = null;
+
+        if(list.head == null) {
+            list.head = new_node;
+        } else {
+            Node last = list.head;
+            while (last.next != null) {
+                last = last.next;
+            }
+            last.next = new_node;
+        }
+
+
+    }
 }
