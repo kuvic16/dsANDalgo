@@ -49,6 +49,32 @@ public class LinkedList {
         }
     }
 
+    public static LinkedList deleteByKey(LinkedList list, int key)
+    {
+        Node currentNode = list.head, prev = null;
+
+        if(currentNode != null && currentNode.data == key) {
+            list.head = currentNode.next;
+            System.out.println(key + " found and deleted");
+            return list;
+        }
+
+        while (currentNode != null && currentNode.data != key){
+            prev = currentNode;
+            currentNode = currentNode.next;
+        }
+
+        if(currentNode != null) {
+            prev.next = currentNode.next;
+            System.out.println(key + " found and deleted");
+        }
+
+        if(currentNode == null) {
+            System.out.println(key + " not found");
+        }
+        return list;
+    }
+
 
     public static void main(String[] args)
     {
@@ -58,6 +84,9 @@ public class LinkedList {
         list = insert(list, 3);
         list = insert(list, 4);
         list = insert(list, 5);
+        printList(list);
+
+        deleteByKey(list, 3);
         printList(list);
     }
 
