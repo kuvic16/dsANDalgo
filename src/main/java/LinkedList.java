@@ -35,7 +35,46 @@ public class LinkedList {
             }
             last.next = new_node;
         }
-
-
+        return list;
     }
+
+
+    public static void printList(LinkedList list)
+    {
+        Node currentNode = list.head;
+        System.out.println("LinkedList: ");
+        while (currentNode != null) {
+            System.out.print(currentNode.data + " ");
+            currentNode = currentNode.next;
+        }
+    }
+
+
+    public static void main(String[] args)
+    {
+        LinkedList list = new LinkedList();
+        list = insert(list, 1);
+        list = insert(list, 2);
+        list = insert(list, 3);
+        list = insert(list, 4);
+        list = insert(list, 5);
+        printList(list);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
