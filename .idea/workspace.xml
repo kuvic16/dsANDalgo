@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/circular_queue/MyCircularQueueLeet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/circular_queue/BuildInCircularQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/MyCircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/circular_queue/MyCircularQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +152,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Application.MyCircularQueueLeetTest">
+  <component name="RunManager" selected="Application.BuildInCircularQueue">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -375,6 +374,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration name="BuildInCircularQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.circular_queue.BuildInCircularQueue" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.circular_queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.circular_queue.Main" />
       <module name="dsANDalgo" />
@@ -467,6 +480,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BuildInCircularQueue" />
         <item itemvalue="Application.MyCircularQueueLeetTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -483,7 +497,7 @@
       <workItem from="1641059629870" duration="33000" />
       <workItem from="1660816701153" duration="3595000" />
       <workItem from="1660837034898" duration="5344000" />
-      <workItem from="1660889266896" duration="4465000" />
+      <workItem from="1660889266896" duration="6047000" />
     </task>
     <servers />
   </component>
