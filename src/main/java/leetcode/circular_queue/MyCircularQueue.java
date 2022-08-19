@@ -1,6 +1,5 @@
-package leetcode;
+package leetcode.circular_queue;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -92,7 +91,7 @@ public class MyCircularQueue {
     }
 }
 
-class Main{
+class MyCircularQueueTest{
     public static void main(String[] args) {
 //        MyCircularQueue myCircularQueue = new MyCircularQueue(3);
 //        myCircularQueue.print();
