@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/circular_queue/BuildInCircularQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/daily_challenge/ConsecutiveSubsequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +152,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="Application.BuildInCircularQueue">
+  <component name="RunManager" selected="Application.ConsecutiveSubsequenceTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -388,6 +388,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsecutiveSubsequenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.daily_challenge.ConsecutiveSubsequenceTest" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.daily_challenge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.circular_queue.Main" />
       <module name="dsANDalgo" />
@@ -480,6 +494,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConsecutiveSubsequenceTest" />
         <item itemvalue="Application.BuildInCircularQueue" />
         <item itemvalue="Application.MyCircularQueueLeetTest" />
         <item itemvalue="Application.Main" />
@@ -497,7 +512,7 @@
       <workItem from="1641059629870" duration="33000" />
       <workItem from="1660816701153" duration="3595000" />
       <workItem from="1660837034898" duration="5344000" />
-      <workItem from="1660889266896" duration="6047000" />
+      <workItem from="1660889266896" duration="18837000" />
     </task>
     <servers />
   </component>
