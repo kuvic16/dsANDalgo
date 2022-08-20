@@ -1,4 +1,4 @@
-package leetcode.circular_queue;
+package leetcode.queue_stack.circular_queue;
 
 public class MyCircularQueueLeet {
     private int[] data;
