@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/bfs_template/BfsTemplate1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/circular_queue/BuildInCircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/circular_queue/BuildInCircularQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/circular_queue/MyCircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/circular_queue/MyCircularQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/circular_queue/MyCircularQueueLeet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/circular_queue/MyCircularQueueLeet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/bfs_template/BfsTemplate1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/bfs_template/BfsTemplate1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -531,7 +528,8 @@
       <workItem from="1660816701153" duration="3595000" />
       <workItem from="1660837034898" duration="5344000" />
       <workItem from="1660889266896" duration="18837000" />
-      <workItem from="1661003224264" duration="4073000" />
+      <workItem from="1661003224264" duration="7446000" />
+      <workItem from="1661058538087" duration="501000" />
     </task>
     <servers />
   </component>
@@ -595,17 +593,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/queue_stack/bfs_template/BfsTemplate1.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
