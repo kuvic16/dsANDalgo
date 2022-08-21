@@ -1,0 +1,24 @@
+A traverse a Tree - Introduction
+
+1. Pre-order traversal
+2. In-order traversal
+3. Post-oder traversal
+4. Recursive or Iterative
+
+1. Pre-order traversal
+is to visit the root first then traverse the left subtree and finally traverse the right subtree.
+root->left->right
+
+2. In-order traversal
+is to traverse the left subtree first then visit the root and finally traverse the right subtree.
+left->root->right
+
+3. Post-order traversal
+is to traverse the left subtree first then visit the right subtree and finally visit the root
+left->right->root
+
+------
+NOTE:
+------
+1. Deleting nodes in a tree, deletion process will be in post-order.
+2. Post-order is widely use in mathematical expression.
