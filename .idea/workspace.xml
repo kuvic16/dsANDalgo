@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/stack/StackExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreeInorderTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,8 +151,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.BinaryTreePreorderTraversalTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -530,7 +536,7 @@
       <workItem from="1660837034898" duration="5344000" />
       <workItem from="1660889266896" duration="18837000" />
       <workItem from="1661003224264" duration="7446000" />
-      <workItem from="1661058538087" duration="8387000" />
+      <workItem from="1661058538087" duration="11342000" />
     </task>
     <servers />
   </component>
@@ -598,11 +604,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java</url>
           <line>53</line>

@@ -1,10 +1,8 @@
 package leetcode.binary_tree.TraverseTree;
 
-import leetcode.queue_stack.bfs_template.BfsTemplate1;
-
 import java.util.*;
 
-public class BinaryTreePreorderTraversal {
+public class BinaryTreeInorderTraversal {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> traverseList = new ArrayList<Integer>();
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
@@ -31,20 +29,8 @@ public class BinaryTreePreorderTraversal {
     }
 }
 
-//class TreeNode {
-//    int val;
-//    TreeNode left;
-//    TreeNode right;
-//    TreeNode() {}
-//    TreeNode(int val) { this.val = val; }
-//    TreeNode(int val, TreeNode left, TreeNode right) {
-//        this.val = val;
-//        this.left = left;
-//        this.right = right;
-//    }
-//}
 
-class BinaryTreePreorderTraversalTest {
+class BinaryTreeInorderTraversalTest {
     public static void main(String[] args){
         TreeNode node1 = new TreeNode(3);
         TreeNode node2 = new TreeNode(2, node1, null);
