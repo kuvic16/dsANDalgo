@@ -3,26 +3,44 @@ package leetcode.binary_tree.TraverseTree;
 import java.util.*;
 
 public class BinaryTreeInorderTraversal {
-    public List<Integer> preorderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> traverseList = new ArrayList<Integer>();
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
-        Stack<TreeNode> rightQueue = new Stack<TreeNode>();
+        Stack<TreeNode> queue = new Stack<TreeNode>();
+        Set<TreeNode> visited = new HashSet<TreeNode>();
+
         if(root == null) return traverseList;
 
-        queue.offer(root);
-
+        queue.push(root);
+        TreeNode current = root;
+        TreeNode parent = null;
         while(!queue.isEmpty()){
-            int size = queue.size();
-            for(int i=0; i<size; ++i){
-                TreeNode cur = queue.peek();
-                traverseList.add(cur.val);
+            if(current.left != null){
+                current = current.left;
+                queue.push(current);
+            }else if(current.right != null){
 
-                if(cur.left != null) queue.offer(cur.left);
-                if(cur.right != null) rightQueue.push(cur.right);
-                if(cur.left == null && !rightQueue.isEmpty()){
-                    queue.offer(rightQueue.pop());
+                if (!visited.contains(current)) {
+                    visited.add(current);
+                    traverseList.add(current.val);
                 }
-                queue.poll();
+                current = current.right;
+                queue.push(current);
+            }else if(current.left == null && current.right == null){
+                if(!visited.contains(current)){
+                    visited.add(current);
+                    traverseList.add(current.val);
+                }
+                queue.pop();
+
+                if(!queue.isEmpty()) {
+                    parent = queue.peek();
+                    if (parent.left == current) {
+                        parent.left = null;
+                    } else {
+                        parent.right = null;
+                    }
+                    current = parent;
+                }
             }
         }
         return traverseList;
@@ -35,9 +53,11 @@ class BinaryTreeInorderTraversalTest {
         TreeNode node1 = new TreeNode(3);
         TreeNode node2 = new TreeNode(2, node1, null);
         TreeNode node3 = new TreeNode(1, null, node2);
-        BinaryTreePreorderTraversal btpt = new BinaryTreePreorderTraversal();
-        List<Integer> list = btpt.preorderTraversal(node1);
-        System.out.println(list.size());
+        BinaryTreeInorderTraversal btpt = new BinaryTreeInorderTraversal();
+        List<Integer> list = btpt.inorderTraversal(node3);
+        for(Integer a : list) {
+            System.out.println(a);
+        }
 
 
     }

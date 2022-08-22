@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreeInorderTraversal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/inorder_1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreeInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreeInorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/circular_queue/BuildInCircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/queue_stack/circular_queue/BuildInCircularQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,8 +158,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.BinaryTreePreorderTraversalTest">
+  <component name="RunManager" selected="Application.BinaryTreeInorderTraversalTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -395,6 +398,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BinaryTreeInorderTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.BinaryTreeInorderTraversalTest" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BinaryTreePreorderTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.BinaryTreePreorderTraversalTest" />
       <module name="dsANDalgo" />
@@ -416,20 +433,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.queue_stack.circular_queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsecutiveSubsequenceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.daily_challenge.ConsecutiveSubsequenceTest" />
-      <module name="dsANDalgo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.daily_challenge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -515,11 +518,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryTreeInorderTraversalTest" />
+        <item itemvalue="Application.BuildInCircularQueue" />
         <item itemvalue="Application.BinaryTreePreorderTraversalTest" />
         <item itemvalue="Application.StackExample" />
         <item itemvalue="Application.BfsTemplate1Test" />
-        <item itemvalue="Application.ConsecutiveSubsequenceTest" />
-        <item itemvalue="Application.BuildInCircularQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -536,7 +539,8 @@
       <workItem from="1660837034898" duration="5344000" />
       <workItem from="1660889266896" duration="18837000" />
       <workItem from="1661003224264" duration="7446000" />
-      <workItem from="1661058538087" duration="11342000" />
+      <workItem from="1661058538087" duration="12834000" />
+      <workItem from="1661136826976" duration="15383000" />
     </task>
     <servers />
   </component>
@@ -608,6 +612,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreePreorderTraversal.java</url>
           <line>53</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/BinaryTreeInorderTraversal.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
