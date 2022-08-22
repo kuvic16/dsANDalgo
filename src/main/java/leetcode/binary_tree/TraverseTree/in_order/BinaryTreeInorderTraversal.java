@@ -1,4 +1,6 @@
-package leetcode.binary_tree.TraverseTree;
+package leetcode.binary_tree.TraverseTree.in_order;
+
+import leetcode.binary_tree.TraverseTree.TreeNode;
 
 import java.util.*;
 
