@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/in_order/InorderLeet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/in_order/InorderMorrisTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/pre_order/BinaryTreePreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/pre_order/BinaryTreePreorderTraversal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,11 +149,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/in_order" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\in_order" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -539,7 +539,8 @@
       <workItem from="1660889266896" duration="18837000" />
       <workItem from="1661003224264" duration="7446000" />
       <workItem from="1661058538087" duration="12834000" />
-      <workItem from="1661136826976" duration="19875000" />
+      <workItem from="1661136826976" duration="20174000" />
+      <workItem from="1661229113787" duration="3967000" />
     </task>
     <servers />
   </component>
