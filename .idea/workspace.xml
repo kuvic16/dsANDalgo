@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/in_order/InorderMorrisTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/post_order/BinaryTreePostorderTraversal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,11 +148,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/in_order" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/post_order" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\post_order" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\in_order" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
@@ -161,7 +161,7 @@
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InorderLeetTest">
+  <component name="RunManager" selected="Application.BinaryTreeInorderTraversalTest (1)">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -383,13 +383,13 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration name="BinaryTreeInorderTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.in_order.BinaryTreeInorderTraversalTest" />
+    <configuration name="BinaryTreeInorderTraversalTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.post_order.BinaryTreeInorderTraversalTest" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.in_order.*" />
+          <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.post_order.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -397,8 +397,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreePreorderTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.pre_order.BinaryTreePreorderTraversalTest" />
+    <configuration name="BinaryTreeInorderTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.in_order.BinaryTreeInorderTraversalTest" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -517,11 +517,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinaryTreeInorderTraversalTest (1)" />
         <item itemvalue="Application.InorderLeetTest" />
         <item itemvalue="Application.InorderRecursiveTest" />
         <item itemvalue="Application.BinaryTreeInorderTraversalTest" />
         <item itemvalue="Application.BuildInCircularQueue" />
-        <item itemvalue="Application.BinaryTreePreorderTraversalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -540,7 +540,7 @@
       <workItem from="1661003224264" duration="7446000" />
       <workItem from="1661058538087" duration="12834000" />
       <workItem from="1661136826976" duration="20174000" />
-      <workItem from="1661229113787" duration="3967000" />
+      <workItem from="1661229113787" duration="4928000" />
     </task>
     <servers />
   </component>
