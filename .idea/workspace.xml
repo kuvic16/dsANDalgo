@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/post_order/PostorderRecursive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/tree_level/TreeLevelTraversal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/daily_challenge/ConsecutiveSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/daily_challenge/ConsecutiveSubsequence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,11 +150,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/post_order" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/tree_level" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\tree_level" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\post_order" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\in_order" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
@@ -162,7 +164,7 @@
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PostorderRecursiveTest">
+  <component name="RunManager" selected="Application.TreeLevelTraversalTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -398,20 +400,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinaryTreeInorderTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.in_order.BinaryTreeInorderTraversalTest" />
-      <module name="dsANDalgo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.in_order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InorderLeetTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.in_order.InorderLeetTest" />
       <module name="dsANDalgo" />
@@ -447,6 +435,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.post_order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeLevelTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.tree_level.TreeLevelTraversalTest" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.tree_level.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -518,11 +520,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeLevelTraversalTest" />
         <item itemvalue="Application.PostorderRecursiveTest" />
         <item itemvalue="Application.BinaryTreeInorderTraversalTest (1)" />
         <item itemvalue="Application.InorderLeetTest" />
         <item itemvalue="Application.InorderRecursiveTest" />
-        <item itemvalue="Application.BinaryTreeInorderTraversalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -541,7 +543,9 @@
       <workItem from="1661003224264" duration="7446000" />
       <workItem from="1661058538087" duration="12834000" />
       <workItem from="1661136826976" duration="20174000" />
-      <workItem from="1661229113787" duration="5788000" />
+      <workItem from="1661229113787" duration="7060000" />
+      <workItem from="1661358227800" duration="1909000" />
+      <workItem from="1661364647508" duration="1746000" />
     </task>
     <servers />
   </component>
@@ -613,6 +617,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/pre_order/BinaryTreePreorderTraversal.java</url>
           <line>53</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/tree_level/TreeLevelTraversal.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/tree_level/TreeLevelTraversal.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,8 @@
 package leetcode.daily_challenge;
 
+/**
+ * Problem: https://leetcode.com/problems/split-array-into-consecutive-subsequences/
+ */
 public class ConsecutiveSubsequence {
 
     public boolean isPossible(int[] nums){
