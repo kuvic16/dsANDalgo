@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/MaximumDepthTopToBottom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/MaximumDepthTopToBottom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -547,6 +548,7 @@
       <workItem from="1661364647508" duration="3284000" />
       <workItem from="1661396324898" duration="2648000" />
       <workItem from="1661442311348" duration="3617000" />
+      <workItem from="1661486718584" duration="1613000" />
     </task>
     <servers />
   </component>
@@ -628,11 +630,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/tree_level/TreeLevelTraversal.java</url>
           <line>16</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/MaximumDepthTopToBottom.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
