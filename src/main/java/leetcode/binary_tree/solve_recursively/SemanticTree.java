@@ -11,17 +11,17 @@ public class SemanticTree {
     public int totalRight = 0;
 
     public boolean isSymmetric(TreeNode root){
-        List<Integer> leftList = new ArrayList<Integer>();
+        List<TreeNode> leftList = new ArrayList<TreeNode>();
         traverse(root.left, leftList);
-//        for (Integer i : leftList) {
-//            System.out.print(i + " ");
+//        for (TreeNode i : leftList) {
+//            System.out.print(i.val + " ");
 //        }
 //        System.out.println();
 
-        List<Integer> rightList = new ArrayList<Integer>();
+        List<TreeNode> rightList = new ArrayList<TreeNode>();
         traverse(root.right, rightList);
-//        for (Integer i : rightList) {
-//            System.out.print(i + " ");
+//        for (TreeNode i : rightList) {
+//            System.out.print(i.val + " ");
 //        }
 //        System.out.println();
 
@@ -29,15 +29,39 @@ public class SemanticTree {
 
         int j= rightList.size() - 1;
         for(int i=0; i<leftList.size(); i++){
-            if(leftList.get(i) != rightList.get(j--)) return false;
+
+            TreeNode leftNode = leftList.get(i);
+            TreeNode rightNode = rightList.get(j--);
+
+            if(leftNode.val != rightNode.val){
+                return false;
+            }
+
+            if(leftNode.right == null && rightNode.left != null){
+                return false;
+            }else if(leftNode.right != null && rightNode.left == null){
+                return false;
+            }else if(leftNode.right != null && rightNode.left != null && leftNode.right.val != rightNode.left.val){
+                return false;
+            }
+
+            if(leftNode.left == null && rightNode.right != null){
+                return false;
+            }else if(leftNode.left != null && rightNode.right == null){
+                return false;
+            }else if(leftNode.left != null && rightNode.right != null && leftNode.left.val != rightNode.right.val){
+                return false;
+            }
+
+
         }
         return true;
     }
 
-    public void traverse(TreeNode root, List<Integer> list){
+    public void traverse(TreeNode root, List<TreeNode> list){
         if(root != null){
             traverse(root.left, list);
-            list.add(root.val);
+            list.add(root);
             traverse(root.right, list);
         }
     }
@@ -49,8 +73,8 @@ class SemanticTreeTest{
 //        Integer[] nodes = new Integer[]{1,2,2,3,4,4,3};
 //        Integer[] nodes = new Integer[]{1,2,3};
 //        Integer[] nodes = new Integer[]{1,2,2,null,3,null,3};
-        Integer[] nodes = new Integer[]{2,3,3,4,5,5,4,null,null,8,9,null,null,9,8};
-        //Integer[] nodes = new Integer[]{1,2,2,2,null,2};
+//        Integer[] nodes = new Integer[]{2,3,3,4,5,5,4,null,null,8,9,null,null,9,8};
+        Integer[] nodes = new Integer[]{1,2,2,2,null,2};
         TreeNode root = new TreeNode().prepareTree(nodes);
 
         SemanticTree st = new SemanticTree();
