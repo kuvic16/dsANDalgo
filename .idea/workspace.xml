@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/MaximumDepthBottomToTop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/SemanticTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/MaximumDepthBottomToTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/MaximumDepthBottomToTop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +165,7 @@
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaximumDepthBottomToTopTest">
+  <component name="RunManager" selected="Application.SemanticTreeTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -386,20 +387,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration name="BinaryTreeInorderTraversalTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.post_order.BinaryTreeInorderTraversalTest" />
-      <module name="dsANDalgo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.post_order.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MaximumDepthBottomToTopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.solve_recursively.MaximumDepthBottomToTopTest" />
       <module name="dsANDalgo" />
@@ -435,6 +422,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.post_order.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SemanticTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.solve_recursively.SemanticTreeTest" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binary_tree.solve_recursively.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -520,11 +521,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SemanticTreeTest" />
         <item itemvalue="Application.MaximumDepthBottomToTopTest" />
         <item itemvalue="Application.MaximumDepthTopToBottomTest" />
         <item itemvalue="Application.TreeLevelTraversalTest" />
         <item itemvalue="Application.PostorderRecursiveTest" />
-        <item itemvalue="Application.BinaryTreeInorderTraversalTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -548,7 +549,8 @@
       <workItem from="1661364647508" duration="3284000" />
       <workItem from="1661396324898" duration="2648000" />
       <workItem from="1661442311348" duration="3617000" />
-      <workItem from="1661486718584" duration="3405000" />
+      <workItem from="1661486718584" duration="14181000" />
+      <workItem from="1661604244401" duration="3792000" />
     </task>
     <servers />
   </component>
@@ -630,6 +632,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/tree_level/TreeLevelTraversal.java</url>
           <line>16</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/SemanticTree.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

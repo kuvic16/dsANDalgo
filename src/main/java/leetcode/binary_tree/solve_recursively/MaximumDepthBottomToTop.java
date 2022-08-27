@@ -3,7 +3,6 @@ package leetcode.binary_tree.solve_recursively;
 import leetcode.binary_tree.TraverseTree.TreeNode;
 
 public class MaximumDepthBottomToTop {
-    private int answer;
 
     public int getMaximumDepth(TreeNode root){
         return maximumDepth(root);
