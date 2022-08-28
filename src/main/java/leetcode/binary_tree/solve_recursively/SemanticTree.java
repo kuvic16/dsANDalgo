@@ -7,9 +7,6 @@ import java.util.List;
 
 public class SemanticTree {
 
-    public int totalLeft = 0;
-    public int totalRight = 0;
-
     public boolean isSymmetric(TreeNode root){
         List<TreeNode> leftList = new ArrayList<TreeNode>();
         traverse(root.left, leftList);
