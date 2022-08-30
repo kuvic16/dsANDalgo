@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/PathSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromInPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/SemanticTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/SemanticTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,22 +149,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\conclusion" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\solve_recursively" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\tree_level" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\post_order" />
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree\in_order" />
-      <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PathSumTest">
+  <component name="RunManager" selected="Application.ConstructBTreeFromInPostTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -387,6 +386,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration name="ConstructBTreeFromInPostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.ConstructBTreeFromInPostTest" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binary_tree.conclusion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MaximumDepthBottomToTopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.solve_recursively.MaximumDepthBottomToTopTest" />
       <module name="dsANDalgo" />
@@ -436,20 +449,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.binary_tree.solve_recursively.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TreeLevelTraversalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.TraverseTree.tree_level.TreeLevelTraversalTest" />
-      <module name="dsANDalgo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.TraverseTree.tree_level.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -521,11 +520,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConstructBTreeFromInPostTest" />
         <item itemvalue="Application.PathSumTest" />
         <item itemvalue="Application.SemanticTreeTest" />
         <item itemvalue="Application.MaximumDepthBottomToTopTest" />
         <item itemvalue="Application.MaximumDepthTopToBottomTest" />
-        <item itemvalue="Application.TreeLevelTraversalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -551,7 +550,7 @@
       <workItem from="1661442311348" duration="3617000" />
       <workItem from="1661486718584" duration="14181000" />
       <workItem from="1661604244401" duration="8120000" />
-      <workItem from="1661661663805" duration="3553000" />
+      <workItem from="1661661663805" duration="6361000" />
     </task>
     <servers />
   </component>
