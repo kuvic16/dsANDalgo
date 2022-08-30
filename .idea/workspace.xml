@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromInPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromInPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromInPost.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -550,7 +550,7 @@
       <workItem from="1661442311348" duration="3617000" />
       <workItem from="1661486718584" duration="14181000" />
       <workItem from="1661604244401" duration="8120000" />
-      <workItem from="1661661663805" duration="6361000" />
+      <workItem from="1661661663805" duration="9821000" />
     </task>
     <servers />
   </component>
@@ -642,6 +642,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/solve_recursively/SemanticTree.java</url>
           <line>26</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromInPost.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
