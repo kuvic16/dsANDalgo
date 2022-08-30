@@ -26,6 +26,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -550,7 +558,7 @@
       <workItem from="1661442311348" duration="3617000" />
       <workItem from="1661486718584" duration="14181000" />
       <workItem from="1661604244401" duration="8120000" />
-      <workItem from="1661661663805" duration="9821000" />
+      <workItem from="1661661663805" duration="16102000" />
     </task>
     <servers />
   </component>
@@ -645,8 +653,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromInPost.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="10" />
+          <line>13</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
