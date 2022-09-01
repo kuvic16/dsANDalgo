@@ -16,25 +16,37 @@ public class TreeNextRight {
 
         queue.offer(root);
         Node curr = root;
+        List<Node> neighbours = new ArrayList<Node>();
+        neighbours.add(root);
+
         while(!queue.isEmpty()){
-            List<Node> neighbours = new ArrayList<Node>();
+            curr = queue.peek();
             if(curr.left != null) {
                 neighbours.add(curr.left);
                 queue.offer(curr.left);
             }
-            if(curr.right != null) neighbours.add(curr.right);
-
-            Node prevnext = null;
-            for(int i=neighbours.size()-1; i>=0; i--){
-                Node node = neighbours.get(i);
-                node.next = prevnext;
-
-                prevnext = node;
+            if(curr.right != null) {
+                neighbours.add(curr.right);
+                queue.offer(curr.right);
             }
+            queue.poll();
         }
 
-        traverse(root, 1, null);
-        return null;
+        int counter = 0; double nextLevel = 1;
+        for(int i=0; i<neighbours.size(); i++){
+            Node node = neighbours.get(i);
+            counter += 1;
+            if(nextLevel > 1 && counter < nextLevel){
+                if(i < neighbours.size() - 1){
+                    node.next = neighbours.get(i + 1);
+                }
+            }
+            if(counter == nextLevel){
+                counter = 0;
+                nextLevel = nextLevel * 2;
+            }
+        }
+        return root;
     }
 
 
