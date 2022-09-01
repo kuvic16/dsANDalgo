@@ -1,50 +1,50 @@
-package leetcode.binary_tree.TraverseTree;
+package leetcode.binary_tree;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class TreeNode {
+public class Node {
     public int val;
-    public TreeNode left;
-    public TreeNode right;
-    public TreeNode next;
+    public Node left;
+    public Node right;
+    public Node next;
 
-    public TreeNode() {}
-    public TreeNode(int val) { this.val = val; }
-    public TreeNode(int val, TreeNode left, TreeNode right) {
+    public Node() {}
+    public Node(int val) { this.val = val; }
+    public Node(int val, Node left, Node right) {
         this.val = val;
         this.left = left;
         this.right = right;
     }
 
-    public TreeNode(int val, TreeNode left, TreeNode right, TreeNode next) {
+    public Node(int val, Node left, Node right, Node next) {
         this.val = val;
         this.left = left;
         this.right = right;
         this.next = next;
     }
 
-    public TreeNode prepareTree(Integer[] nodes){
-        Queue<TreeNode> parentQueue = new LinkedList<TreeNode>();
-        TreeNode parent = null; int i=1;
-        TreeNode root = null;
+    public Node prepareTree(Integer[] nodes){
+        Queue<Node> parentQueue = new LinkedList<Node>();
+        Node parent = null; int i=1;
+        Node root = null;
         for(Integer node : nodes){
             if(parent == null){
-                parent = new TreeNode(node);
+                parent = new Node(node);
                 root = parent;
                 parentQueue.offer(parent);
                 continue;
             }
             if(i==1){
                 if(node != null) {
-                    TreeNode curr = new TreeNode(node);
+                    Node curr = new Node(node);
                     parent.left = curr;
                     parentQueue.offer(curr);
                 }
                 i += 1;
             }else if(i == 2){
                 if(node != null) {
-                    TreeNode curr = new TreeNode(node);
+                    Node curr = new Node(node);
                     parent.right = curr;
                     parentQueue.offer(curr);
                 }

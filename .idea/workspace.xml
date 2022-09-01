@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromPreIn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/TreeNextRight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/TraverseTree/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,8 +173,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\personal\study\data structure\dsANDalgo\src\main\java\leetcode\binary_tree\TraverseTree" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.binary_tree" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.ConstructBTreeFromPreInTest">
+  <component name="RunManager" selected="Application.TreeNextRightTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -422,20 +427,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumDepthBottomToTopTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.solve_recursively.MaximumDepthBottomToTopTest" />
-      <module name="dsANDalgo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.solve_recursively.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PathSumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.solve_recursively.PathSumTest" />
       <module name="dsANDalgo" />
@@ -457,6 +448,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.binary_tree.solve_recursively.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeNextRightTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.TreeNextRightTest" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.binary_tree.conclusion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -528,11 +533,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeNextRightTest" />
         <item itemvalue="Application.ConstructBTreeFromPreInTest" />
         <item itemvalue="Application.ConstructBTreeFromInPostTest" />
         <item itemvalue="Application.PathSumTest" />
         <item itemvalue="Application.SemanticTreeTest" />
-        <item itemvalue="Application.MaximumDepthBottomToTopTest" />
       </list>
     </recent_temporary>
   </component>
@@ -559,7 +564,7 @@
       <workItem from="1661486718584" duration="14181000" />
       <workItem from="1661604244401" duration="8120000" />
       <workItem from="1661661663805" duration="16435000" />
-      <workItem from="1661914584317" duration="2189000" />
+      <workItem from="1661914584317" duration="19601000" />
     </task>
     <servers />
   </component>
@@ -657,8 +662,23 @@
           <line>13</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromPreIn.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/TreeNextRight.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="leetcode.binary_tree.Node" memberName="left" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
