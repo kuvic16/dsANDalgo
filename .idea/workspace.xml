@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/TreeNextRightTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/TreeNextRightTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/TreeNextRightTwo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +175,7 @@
       <recent name="leetcode.binary_tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TreeNextRightTest">
+  <component name="RunManager" selected="Application.TreeNextRightTreeNextRightTwoTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -439,13 +439,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SemanticTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.solve_recursively.SemanticTreeTest" />
+    <configuration name="TreeNextRightTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.TreeNextRightTest" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.solve_recursively.*" />
+          <option name="PATTERN" value="leetcode.binary_tree.conclusion.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -453,8 +453,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeNextRightTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.TreeNextRightTest" />
+    <configuration name="TreeNextRightTreeNextRightTwoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.TreeNextRightTreeNextRightTwoTest" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -531,11 +531,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeNextRightTreeNextRightTwoTest" />
         <item itemvalue="Application.TreeNextRightTest" />
         <item itemvalue="Application.ConstructBTreeFromPreInTest" />
         <item itemvalue="Application.ConstructBTreeFromInPostTest" />
         <item itemvalue="Application.PathSumTest" />
-        <item itemvalue="Application.SemanticTreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -566,7 +566,7 @@
       <workItem from="1662046909126" duration="4020000" />
       <workItem from="1662056492383" duration="2708000" />
       <workItem from="1662119800929" duration="628000" />
-      <workItem from="1662139279211" duration="66000" />
+      <workItem from="1662139279211" duration="1244000" />
     </task>
     <servers />
   </component>
@@ -668,6 +668,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromPreIn.java</url>
           <line>10</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/TreeNextRightTwo.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
