@@ -10,8 +10,23 @@ public class LowestCommonAncestor {
 
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        traverse(root, p.val, q.val);
+        //traverse(root, p.val, q.val);
+        recurseTree(root, p.val, q.val);
         return ancestor;
+    }
+
+    private boolean recurseTree(TreeNode root, int p, int q){
+        if(root == null) return false;
+
+        int left = recurseTree(root.left, p, q) ? 1 : 0;
+        int right = recurseTree(root.right, p, q) ? 1 : 0;
+        int mid = (root.val == p || root.val == q) ? 1 : 0;
+
+        if(mid + left + right >= 2){
+            ancestor = root;
+        }
+
+        return (mid + left + right > 0);
     }
 
     private void traverse(TreeNode root, int p, int q){
@@ -42,17 +57,17 @@ public class LowestCommonAncestor {
 
 class LowestCommonAncestorTest {
     public static void main(String[] args){
-        Integer[] nodes = new Integer[]{3,5,1,6,2,0,8,null,null,7,4};
-        TreeNode root = new TreeNode();
-        root = root.prepareTree(nodes);
-        TreeNode p = new TreeNode(5);
-        TreeNode q = new TreeNode(1);
-
 //        Integer[] nodes = new Integer[]{3,5,1,6,2,0,8,null,null,7,4};
 //        TreeNode root = new TreeNode();
 //        root = root.prepareTree(nodes);
 //        TreeNode p = new TreeNode(5);
-//        TreeNode q = new TreeNode(4);
+//        TreeNode q = new TreeNode(1);
+
+        Integer[] nodes = new Integer[]{3,5,1,6,2,0,8,null,null,7,4};
+        TreeNode root = new TreeNode();
+        root = root.prepareTree(nodes);
+        TreeNode p = new TreeNode(5);
+        TreeNode q = new TreeNode(4);
 
         LowestCommonAncestor btpt = new LowestCommonAncestor();
         TreeNode result = btpt.lowestCommonAncestor(root, p, q);
