@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/Task4A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/LowestCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/others/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/others/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/others/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/others/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/others/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/others/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StackExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/others/StackExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +182,7 @@
       <recent name="leetcode.binary_tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LowestCommonAncestorTest">
+  <component name="RunManager" selected="Application.Task4A">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -397,20 +404,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration name="ConstructBTreeFromInPostTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.ConstructBTreeFromInPostTest" />
-      <module name="dsANDalgo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.conclusion.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ConstructBTreeFromPreInTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.ConstructBTreeFromPreInTest" />
       <module name="dsANDalgo" />
@@ -432,6 +425,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.binary_tree.conclusion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task4A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforce.Task4A" />
+      <module name="dsANDalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="codeforce.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -531,11 +538,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task4A" />
         <item itemvalue="Application.LowestCommonAncestorTest" />
         <item itemvalue="Application.TreeNextRightTreeNextRightTwoTest" />
         <item itemvalue="Application.TreeNextRightTest" />
         <item itemvalue="Application.ConstructBTreeFromPreInTest" />
-        <item itemvalue="Application.ConstructBTreeFromInPostTest" />
       </list>
     </recent_temporary>
   </component>
@@ -567,7 +574,7 @@
       <workItem from="1662056492383" duration="2708000" />
       <workItem from="1662119800929" duration="628000" />
       <workItem from="1662139279211" duration="8301000" />
-      <workItem from="1662185343487" duration="6318000" />
+      <workItem from="1662185343487" duration="9406000" />
     </task>
     <servers />
   </component>

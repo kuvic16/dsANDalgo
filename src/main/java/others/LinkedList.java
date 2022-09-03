@@ -1,4 +1,4 @@
-/**
+package others; /**
  * @Author Shaiful Islam Palash | kuvic16@gmail.com
  * @CreatedAt: 1/8/2022
  */
@@ -42,7 +42,7 @@ public class LinkedList {
     public static void printList(LinkedList list)
     {
         Node currentNode = list.head;
-        System.out.println("LinkedList: ");
+        System.out.println("others.LinkedList: ");
         while (currentNode != null) {
             System.out.print(currentNode.data + " ");
             currentNode = currentNode.next;
