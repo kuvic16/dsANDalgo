@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/LowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/LowestCommonAncestor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -567,7 +566,7 @@
       <workItem from="1662056492383" duration="2708000" />
       <workItem from="1662119800929" duration="628000" />
       <workItem from="1662139279211" duration="8301000" />
-      <workItem from="1662185343487" duration="4816000" />
+      <workItem from="1662185343487" duration="5740000" />
     </task>
     <servers />
   </component>
@@ -669,11 +668,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromPreIn.java</url>
           <line>10</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/LowestCommonAncestor.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

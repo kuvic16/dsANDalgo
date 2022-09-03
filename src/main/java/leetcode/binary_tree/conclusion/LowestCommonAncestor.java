@@ -40,29 +40,6 @@ public class LowestCommonAncestor {
     }
 }
 
-
-//            if(root.val == p) {
-//                    pPassed = true;
-//                    pLevel = level;
-////                System.out.println("P");
-//                    }
-//                    if(root.val == q) {
-//                    qPassed = true;
-//                    qLevel = level;
-////                System.out.println("Q");
-//                    }
-//
-//            if(root.val == q || root.val == p) {
-//                if((pPassed && !qPassed ) || (!pPassed && qPassed )){
-//                    System.out.println("R");
-//                }
-//            }
-
-//System.out.print(root.val + "(" + level + ")" + " ");
-//            if(pPassed && qPassed && ancestor == null && pLevel > level && qLevel > level) {
-//                ancestor = root;
-//            }
-
 class LowestCommonAncestorTest {
     public static void main(String[] args){
         Integer[] nodes = new Integer[]{3,5,1,6,2,0,8,null,null,7,4};
