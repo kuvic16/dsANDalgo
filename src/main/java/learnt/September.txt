@@ -1,0 +1,15 @@
+1. Greedy algorithm
+
+2. Two-pointer:
+    a. https://www.youtube.com/watch?v=kr5bEl6pGlg
+    b. https://codeforces.com/contest/1006/problem/C
+    c. https://codeforces.com/contest/1251/problem/A
+
+3. Suffix array: https://codeforces.com/edu/course/2/lesson/2
+
+4. lexicographical order
+In mathematics, the lexicographic or lexicographical order also known as lexical order or dictionary order is
+a generalization of the alphabetical order of the dictionaries to sequences of ordered symbols or, more generally, of elements of a totally ordered set.
+https://en.wikipedia.org/wiki/Lexicographic_order
+
+5. Radix Sort

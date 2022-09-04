@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/Task158B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/catalog/catalog_info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/itmo_academy_pilot_course/info.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task158B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/learnt/September.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codeforce/Task158A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task158A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codeforce/Task158B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codeforce/Task231A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task231A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codeforce/Task4A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task4A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/codeforce/Task71A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task71A.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -398,12 +406,12 @@
       <method />
     </configuration>
     <configuration name="Task158A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.Task158A" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task158A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.*" />
+          <option name="PATTERN" value="codeforce.problemset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -412,12 +420,12 @@
       </method>
     </configuration>
     <configuration name="Task158B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.Task158B" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task158B" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.*" />
+          <option name="PATTERN" value="codeforce.problemset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -426,12 +434,12 @@
       </method>
     </configuration>
     <configuration name="Task231A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.Task231A" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task231A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.*" />
+          <option name="PATTERN" value="codeforce.problemset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -440,12 +448,12 @@
       </method>
     </configuration>
     <configuration name="Task4A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.Task4A" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task4A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.*" />
+          <option name="PATTERN" value="codeforce.problemset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -454,12 +462,12 @@
       </method>
     </configuration>
     <configuration name="Task71A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.Task71A" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task71A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.*" />
+          <option name="PATTERN" value="codeforce.problemset.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -568,6 +576,7 @@
       <workItem from="1662119800929" duration="628000" />
       <workItem from="1662139279211" duration="8301000" />
       <workItem from="1662185343487" duration="18537000" />
+      <workItem from="1662268360215" duration="3675000" />
     </task>
     <servers />
   </component>
