@@ -13,3 +13,6 @@ a generalization of the alphabetical order of the dictionaries to sequences of o
 https://en.wikipedia.org/wiki/Lexicographic_order
 
 5. Radix Sort
+6. Array, Stack, LinkedList, Queue
+7. Tree, BinaryTree, Depth-First search, Hash Table, Design
+8. Divide & Conquer
