@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/beginners_guide/RunningSum1Darray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task158B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task158B.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -426,12 +426,12 @@
       </method>
     </configuration>
     <configuration name="Task158A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task158A" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.a.Task158A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.problemset.*" />
+          <option name="PATTERN" value="codeforce.problemset.a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -440,12 +440,12 @@
       </method>
     </configuration>
     <configuration name="Task158B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task158B" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.b.Task158B" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.problemset.*" />
+          <option name="PATTERN" value="codeforce.problemset.a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -454,12 +454,12 @@
       </method>
     </configuration>
     <configuration name="Task50A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task50A" />
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.a.Task50A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="codeforce.problemset.*" />
+          <option name="PATTERN" value="codeforce.problemset.a.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -568,7 +568,7 @@
       <workItem from="1662119800929" duration="628000" />
       <workItem from="1662139279211" duration="8301000" />
       <workItem from="1662185343487" duration="18537000" />
-      <workItem from="1662268360215" duration="23697000" />
+      <workItem from="1662268360215" duration="25479000" />
     </task>
     <servers />
   </component>
@@ -670,11 +670,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/binary_tree/conclusion/ConstructBTreeFromPreIn.java</url>
           <line>10</line>
           <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/codeforce/problemset/Task158B.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
