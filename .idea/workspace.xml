@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/beginners_guide/RunningSum1Darray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/a/Task282A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +175,7 @@
       <recent name="leetcode.binary_tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task158B">
+  <component name="RunManager" selected="Application.Task282A">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -425,8 +425,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task158A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.a.Task158A" />
+    <configuration name="Task158B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.b.Task158B" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -439,8 +439,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task158B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.b.Task158B" />
+    <configuration name="Task282A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.a.Task282A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -531,11 +531,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task282A" />
         <item itemvalue="Application.Task158B" />
         <item itemvalue="Application.Task50A" />
         <item itemvalue="Application.SerializeDeserializeTreeTwoTest" />
         <item itemvalue="Application.SerializeDeserializeTreeTest" />
-        <item itemvalue="Application.Task158A" />
       </list>
     </recent_temporary>
   </component>
@@ -568,7 +568,8 @@
       <workItem from="1662119800929" duration="628000" />
       <workItem from="1662139279211" duration="8301000" />
       <workItem from="1662185343487" duration="18537000" />
-      <workItem from="1662268360215" duration="25479000" />
+      <workItem from="1662268360215" duration="26566000" />
+      <workItem from="1662395023997" duration="735000" />
     </task>
     <servers />
   </component>
