@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/beginners_guide/RootEqualsSumOfChildren.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/Task50A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +175,7 @@
       <recent name="leetcode.binary_tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SerializeDeserializeTreeTwoTest">
+  <component name="RunManager" selected="Application.Task50A">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -453,8 +453,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task231A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task231A" />
+    <configuration name="Task50A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeforce.problemset.Task50A" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -531,11 +531,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task50A" />
         <item itemvalue="Application.SerializeDeserializeTreeTwoTest" />
         <item itemvalue="Application.SerializeDeserializeTreeTest" />
         <item itemvalue="Application.Task158B" />
         <item itemvalue="Application.Task158A" />
-        <item itemvalue="Application.Task231A" />
       </list>
     </recent_temporary>
   </component>
@@ -568,7 +568,7 @@
       <workItem from="1662119800929" duration="628000" />
       <workItem from="1662139279211" duration="8301000" />
       <workItem from="1662185343487" duration="18537000" />
-      <workItem from="1662268360215" duration="17086000" />
+      <workItem from="1662268360215" duration="19658000" />
     </task>
     <servers />
   </component>
