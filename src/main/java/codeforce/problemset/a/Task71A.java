@@ -1,8 +1,8 @@
-package codeforce.problemset;
+package codeforce.problemset.a;
 
 import java.util.Scanner;
 
-public class Task71A {
+public class  Task71A {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
