@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/codeforce/problemset/a/Task282A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/beginners_guide/FizzBuzz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +175,7 @@
       <recent name="leetcode.binary_tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task282A">
+  <component name="RunManager" selected="Application.FizzBuzzTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -397,13 +397,13 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration name="SerializeDeserializeTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.binary_tree.conclusion.SerializeDeserializeTreeTest" />
+    <configuration name="FizzBuzzTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.beginners_guide.FizzBuzzTest" />
       <module name="dsANDalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.binary_tree.conclusion.*" />
+          <option name="PATTERN" value="leetcode.beginners_guide.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -531,11 +531,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FizzBuzzTest" />
         <item itemvalue="Application.Task282A" />
         <item itemvalue="Application.Task158B" />
         <item itemvalue="Application.Task50A" />
         <item itemvalue="Application.SerializeDeserializeTreeTwoTest" />
-        <item itemvalue="Application.SerializeDeserializeTreeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -569,7 +569,8 @@
       <workItem from="1662139279211" duration="8301000" />
       <workItem from="1662185343487" duration="18537000" />
       <workItem from="1662268360215" duration="26566000" />
-      <workItem from="1662395023997" duration="735000" />
+      <workItem from="1662395023997" duration="1502000" />
+      <workItem from="1662441064315" duration="3500000" />
     </task>
     <servers />
   </component>
