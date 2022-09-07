@@ -6,20 +6,21 @@ public class RansomNote {
     public boolean canConstruct(String ransomNote, String magazine) {
         if(magazine == null || ransomNote == null) return false;
 
-
-
         char[] rs = ransomNote.toCharArray();
         char[] ms = magazine.toCharArray();
         boolean result = true;
-        //System.out.println(ms);
+        boolean isExist = false;
+
         for(char r : rs){
-            System.out.println(r);
-            for(char m : ms){
-                if(m == r) {
-                    System.out.println("found");
+            isExist = false;
+            for(int i=0; i<ms.length; i++){
+                if(ms[i] == r) {
+                    isExist = true;
+                    ms[i] = '$';
+                    break;
                 }
             }
-            result = Arrays.asList(ms).contains(r);
+            result = result && isExist;
         }
         return result;
     }

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f73eb031-6924-4a22-af0a-e1110a15e9ef" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/beginners_guide/RansomNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/beginners_guide/RansomNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/beginners_guide/RansomNote.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -573,7 +572,7 @@
       <workItem from="1662268360215" duration="26566000" />
       <workItem from="1662395023997" duration="1502000" />
       <workItem from="1662441064315" duration="8039000" />
-      <workItem from="1662526319995" duration="8484000" />
+      <workItem from="1662526319995" duration="8953000" />
     </task>
     <servers />
   </component>
