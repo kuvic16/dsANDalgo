@@ -36,16 +36,26 @@ public class Task112A {
 		System.out.println(s2s);
 
 		String result = "0";
+
+		int s1value = 0, s2value = 0;
 		for(int i=0; i<s1s.length; i++){
-			if((int)s1s[i] > (int)s2s[i]){
-				result = "1";
-				break;
-			}
-			else if((int)s1s[i] < (int)s2s[i]){
-				result = "-1";
-				break;
-			}
+			s1value += s1s[i];
+			s2value += s2s[i];
+			//System.out.println((int)s1s[i]);
 		}
+
+		for(int i=0; i<s1s.length; i++){
+			System.out.print((int)s1s[i] + " ");
+		}
+		System.out.println();
+		for(int i=0; i<s1s.length; i++){
+			System.out.print((int)s2s[i] + " ");
+		}
+
+		System.out.println(s1value);
+		System.out.println(s2value);
+		if(s1value > s2value) result = "1";
+		else if(s1value < s2value) result="-1";
 		
 		System.out.println(result);
 	}
