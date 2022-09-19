@@ -1,5 +1,10 @@
 package leetcode.array101;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+import java.util.Vector;
+
 public class LC3157 {
     public void moveZeroes(int[] nums) {
 
@@ -24,14 +29,60 @@ public class LC3157 {
             System.out.println(nums[i]);
         }
     }
+
+    public void moveZeroes1(int[] nums) {
+        int n = nums.length;
+        int numberOfZeroes = 0;
+        for(int i=0; i<n; i++){
+            if(nums[i] == 0) numberOfZeroes += 1;
+        }
+
+        Queue<Integer> ans = new LinkedList<>();
+        for(int i=0; i<n; i++){
+            if(nums[i] != 0) ans.offer(nums[i]);
+        }
+
+        for(int i=1; i<= numberOfZeroes; i++){
+            ans.offer(0);
+        }
+
+        for(int i=0; i<n; i++){
+            nums[i] = ans.poll();
+        }
+
+        for(int i=0; i<nums.length; i++){
+            System.out.println(nums[i]);
+        }
+    }
+
+    public void moveZeroes2(int[] nums) {
+        int j = 0;
+        for(int i=0; i<nums.length; i++){
+            if(nums[i] != 0){
+                nums[j++] = nums[i];
+            }
+        }
+
+        for(int i=j; i<nums.length; i++){
+            nums[i] = 0;
+        }
+
+        for(int i=0; i<nums.length; i++){
+            System.out.println(nums[i]);
+        }
+    }
+
+    public void moveZeroes3(int[] nums) {
+        
+    }
 }
 
 class LC3157Test {
     public static void main(String[] args){
         LC3157 lc3157 = new LC3157();
-//        int[] nums = new int[]{0,1,0,3,12};
+        int[] nums = new int[]{0,1,0,3,12};
         //int[] nums = new int[]{0};
-        int[] nums = new int[]{0, 0, 1};
-        lc3157.moveZeroes(nums);
+        //int[] nums = new int[]{0, 0, 1};
+        lc3157.moveZeroes2(nums);
     }
 }
