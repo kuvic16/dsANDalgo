@@ -73,16 +73,27 @@ public class LC3157 {
     }
 
     public void moveZeroes3(int[] nums) {
-        
+        for(int lnzfa=0, curr=0; curr < nums.length; curr++){
+            if(nums[curr] != 0){
+                int tmp = nums[curr];
+                nums[curr] = nums[lnzfa];
+                nums[lnzfa] = tmp;
+                lnzfa += 1;
+            }
+        }
+
+        for(int i=0; i<nums.length; i++){
+            System.out.println(nums[i]);
+        }
     }
 }
 
 class LC3157Test {
     public static void main(String[] args){
         LC3157 lc3157 = new LC3157();
-        int[] nums = new int[]{0,1,0,3,12};
+        //int[] nums = new int[]{0,1,0,3,12};
         //int[] nums = new int[]{0};
-        //int[] nums = new int[]{0, 0, 1};
-        lc3157.moveZeroes2(nums);
+        int[] nums = new int[]{0, 0, 1};
+        lc3157.moveZeroes3(nums);
     }
 }
