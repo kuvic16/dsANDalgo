@@ -2,21 +2,30 @@ package leetcode.array101;
 
 public class LC3231 {
     public int thirdMax(int[] nums) {
-        int count = 0, lastDistinctNumber = -1;
-        for (int i = 0; i < nums.length; i++) {
-            boolean distinct = true;
-            for (int j = 0; j < nums.length; j++) {
-                if(i != j && nums[i] == nums[j]){
-                    distinct = false;
-                    break;
+        int lastDistinctNumber = 0;
+
+        int n = nums.length;
+        for(int i=0; i<n; i++){
+            for(int j=i+1; j<n; j++){
+                if(nums[i] < nums[j]){
+                    int tmp = nums[j];
+                    nums[j] = nums[i];
+                    nums[i] = tmp;
                 }
             }
-            if(distinct){
-                lastDistinctNumber = nums[i];
-                count += 1;
-                if(count == 3) break;
-            }
         }
+
+        int j=0, prev = 0;
+        for(int i=0; i<n; i++){
+            if(i == 0 || prev != nums[i]){
+                nums[j++] = nums[i];
+            }
+            prev = nums[i];
+        }
+
+        if(j < 3) lastDistinctNumber = nums[0];
+        else lastDistinctNumber = nums[2];
+
         return lastDistinctNumber;
     }
 }
