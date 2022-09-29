@@ -9,8 +9,8 @@ public class LC1147 {
     public int dominantIndex(int[] nums) {
         int n = nums.length;
         if(n < 2) return -1;
-        Arrays.sort(nums);
-        nums[n-1] > nums[n-2]*2 ?
+        //Arrays.sort(nums);
+        //nums[n-1] > nums[n-2]*2 ? 1 : 0;
         return -1;
     }
 }
