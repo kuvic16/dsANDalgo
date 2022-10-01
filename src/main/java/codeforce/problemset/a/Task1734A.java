@@ -28,22 +28,29 @@ public class Task1734A {
                 }
             }
 
-            long min = -999;
+            long min = -1;
             for(int i=0; i<n; i++){
-                long count =0, totalpath = 0;
-                for(int j=0; j<n && count < 3;  j++){
-                    if(i > j){
-                        totalpath += (a[i] - a[j]);
-                        count++;
-                    }else if( i < j){
-                        totalpath += (a[j] - a[i]);
-                        count++;
-                    }else{
-                        count++;
-                    }
+                long minPath = -1;
+                long path = 0;
+                if(i-2 >= 0){
+                    path = a[i] - a[i-2];
+                    path += a[i] - a[i-1];
+                    minPath = path;
                 }
-                if(min == -999) min = totalpath;
-                else if(min > totalpath) min = totalpath;
+
+                if(i-1 >= 0 && i+1 < n){
+                    path = a[i] - a[i-1];
+                    path += a[i+1] - a[i];
+                    if(minPath == -1 || path < minPath) minPath = path;
+                }
+
+                if(i+2 < n){
+                    path = a[i+2] - a[i];
+                    path += a[i+1] - a[i];
+                    if(minPath == -1 || path < minPath) minPath = path;
+                }
+
+                if(min == -1 || minPath < min) min = minPath;
             }
             System.out.println(min);
             t = t-1;
