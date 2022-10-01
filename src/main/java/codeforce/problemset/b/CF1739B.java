@@ -17,12 +17,14 @@ public class CF1739B {
             boolean oneArray = true;
             for(int i=0; i<n; i++){
                 d[i] = in.nextInt();
+            }
+            for(int i=0; i<n; i++){
                 if(i == 0){
                     a[i] = d[i];
                 }else{
                     int x = Math.abs(d[i] + a[i-1]);
                     int y = Math.abs(d[i] - a[i-1]);
-                    if(Math.abs(x - a[i-1]) == d[i] && Math.abs(y - a[i-1]) == d[i]) {
+                    if(x != y && Math.abs(x - a[i-1]) == d[i] && Math.abs(y - a[i-1]) == d[i]) {
                         oneArray = false;
                         break;
                     }
