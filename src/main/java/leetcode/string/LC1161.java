@@ -27,25 +27,6 @@ public class LC1161 {
         }
         return index;
     }
-
-    public int strStr1(String haystack, String needle) {
-        if(needle.length() > haystack.length()) return -1;
-
-        int j=0; int index = -1, k = -1;
-        for(int i=0; i<haystack.length(); i++){
-            if(haystack.charAt(i) == needle.charAt(j++)){
-                if(k == -1) k = i;
-                if(j == needle.length()){
-                    index = i - (j - 1);
-                    break;
-                }
-                continue;
-            }
-            j = 0;
-            i = i - (j - 1) + 1;
-        }
-        return index;
-    }
 }
 
 class LC1161Test {
@@ -55,7 +36,7 @@ class LC1161Test {
 //        String haystack = "leetcode", needle = "leeto";
         String haystack = "mississippi", needle = "issip";
 //          String haystack = "mississippi", needle = "issipi";
-        int result = lc1161.strStr1(haystack, needle);
+        int result = lc1161.strStr(haystack, needle);
         System.out.println(result);
     }
 }
