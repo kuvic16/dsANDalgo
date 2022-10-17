@@ -2,7 +2,9 @@ package leetcode.two_pointer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class LC1154 {
@@ -24,5 +26,20 @@ class LC1154Test {
         int[] nums = {6,2,6,5,1,2};
         int result = lc1154.arrayPairSum(nums);
         System.out.println(result);
+    }
+}
+
+class Program{
+    public static void main(String[] args){
+        List<Integer> list = new ArrayList<>();
+        int i=0;
+        for(;i<10;i++){
+            list.add(i);
+            if(i==6)
+            {
+                break;
+            }
+            System.out.print(list.get(i));
+        }
     }
 }
