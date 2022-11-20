@@ -7,19 +7,18 @@ import java.util.Scanner;
 
 public class LC1299 {
     public int minSubArrayLen(int target, int[] nums) {
-        int sum = 0, result = 0;
-        for(int i=0; i<nums.length; i++){
-            sum = 0;
-            for(int j=i; j<nums.length; j++){
-                sum += nums[j];
-                if(sum >= target){
-                    if(result == 0) result = j - i + 1;
-                    else result = Math.min(result , j - i  + 1);
-                    break;
-                }
+        int n = nums.length;
+        int ans = 9999999;
+        int left = 0;
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+            while (sum >= target) {
+                ans = Math.min(ans, i + 1 - left);
+                sum -= nums[left++];
             }
         }
-        return result;
+        return (ans != 9999999) ? ans : 0;
     }
 }
 
