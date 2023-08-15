@@ -16,11 +16,6 @@ public class LC1431 {
         for(i = 0; i<candies.length; i++){
             result.add((candies[i] + extraCandies) >= max);
         }
-
-        // for(i=0; i<candies.length-1; i++){
-            
-        // }
-        // System.out.println(max);
         return result;
     }
 }
