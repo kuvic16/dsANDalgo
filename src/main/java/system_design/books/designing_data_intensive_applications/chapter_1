@@ -30,3 +30,39 @@ Reliability meaning - conitnuing to work correctly, even when things go wrong
 
 The things that can go wrong are called faults, and systems that anticipate faults and can cope with them are
 called fault-tolerant or resilient.
+
+Fault: A fault is usally defined as one component of the system deviating from its spec.
+Failure: A failure is when the system as a whole stops providing the required service to the user.
+
+-----------------------------
+The Netflix Chaos Monkey:
+Chaos Monkey is a tool and concept developed by Netflix to test and improve the resilience and reliability of their cloud-based systems. It's part of a larger approach called "Chaos Engineering," which involves intentionally introducing failures and disruptions into a system to uncover weaknesses and vulnerabilities, allowing teams to address them before they result in real-world outages or incidents.
+
+The main purpose of using Chaos Monkey and practicing Chaos Engineering is to:
+
+Identify Weaknesses: Chaos Monkey helps teams identify weaknesses in their system architecture, codebase, and infrastructure. By intentionally causing failures, teams can discover areas that might not be robust enough to handle unexpected situations.
+
+Build Resilience: By subjecting a system to controlled failures, teams can improve its overall resilience and ability to recover gracefully from disruptions. This leads to more stable and available systems, as they are better equipped to handle unexpected events.
+
+Test Redundancy: Chaos Monkey helps validate redundancy and failover mechanisms. It ensures that if one component of a system fails, the failover components can effectively take over without causing a complete system outage.
+
+Enhance Monitoring and Alerting: Introducing chaos into a system can reveal gaps in monitoring and alerting mechanisms. If the team is unaware of a failure during a Chaos Monkey test, it highlights the need to improve monitoring coverage.
+
+Cultural Shift: Chaos Engineering promotes a cultural shift towards embracing failure as a learning opportunity. It encourages teams to adopt a proactive approach to identifying and addressing potential problems before they become critical incidents.
+
+Continuous Improvement: Chaos Monkey is part of a continuous improvement cycle. By regularly running chaos experiments, teams can iterate on their systems, making them more robust over time.
+
+It's important to note that while Chaos Monkey intentionally introduces disruptions, it does so in a controlled manner and within a specific scope. This prevents widespread damage and ensures that the experiments are safe for the system and the users.
+
+Overall, Chaos Monkey and Chaos Engineering are tools and practices that enable organizations to create more reliable and resilient systems, fostering a culture of proactive problem-solving and innovation.
+-----------------------------
+
+Hardware Faults
+1. Hard disk crash
+2. RAM becomes faulty
+3. Power grid blackout
+
+Our first response is usually to add redundancy to the individual hardware components in orderto reduce the failure rate of the system
+
+
+
