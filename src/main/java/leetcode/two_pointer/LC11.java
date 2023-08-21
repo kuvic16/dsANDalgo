@@ -41,11 +41,12 @@ public class LC11 {
         return maxCapacity;
     }
 
-    public int maxArea(int[] height) {
+    public int maxAreaX4(int[] height) {
         int left = 0, maxCapacity = 0; 
         for(int i=0; i<height.length; i++){
-            if(left > 0 && height[i] < height[left]) continue;
-            else left = i;
+            if(left > 0 && height[i] < height[left]) {
+                continue;
+            }else left = i;
             
             int j=i+1, k=height.length-1;
             while(j <= k){
@@ -60,15 +61,27 @@ public class LC11 {
         }
         return maxCapacity;
     }
+
+    public int maxArea(int[] height) {
+        int i = 0, j=height.length-1, maxCapacity = 0; 
+        while(i < j){
+            int capacity =  (j - i) * (height[j] < height[i] ? height[j] : height[i]);
+            if(capacity > maxCapacity) maxCapacity = capacity;
+
+            if(height[i] <= height[j]) i++;
+            else j--;
+        }
+        return maxCapacity;
+    }
 }
 
 class LC11Test {
     public static void main(String[] args){
         LC11 lc11 = new LC11();
-        //System.out.println(lc11.maxArea(new int[]{1,8,6,2,5,4,8,3,7}));
-        //System.out.println(lc11.maxArea(new int[]{1,2,4,3}));
+        System.out.println(lc11.maxArea(new int[]{1,8,6,2,5,4,8,3,7}));
+        System.out.println(lc11.maxArea(new int[]{1,2,4,3}));
         System.out.println(lc11.maxArea(new int[]{2,3,4,5,18,17,6}));
-        //System.out.println(lc11.maxArea(new int[]{1,1}));
+        System.out.println(lc11.maxArea(new int[]{1,1}));
         
     }
 }
