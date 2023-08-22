@@ -1,7 +1,7 @@
 package leetcode.two_pointer;
 
 public class LC1679 {
-    public int maxOperations(int[] nums, int k) {
+    public int maxOperationsX1(int[] nums, int k) {
         int n = nums.length, op = 0;
         for(int i=0; i<n; i++){
             if(nums[i] > k || nums[i] == -1) continue;
@@ -14,6 +14,12 @@ public class LC1679 {
                 }                
             }
         }
+        return op;
+    }
+
+    public int maxOperations(int[] nums, int k) {
+        int n = nums.length, op = 0, i = 0, j = 0;
+        //while(i)
         return op;
     }
 }
