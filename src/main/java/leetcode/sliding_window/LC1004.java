@@ -28,6 +28,15 @@ public class LC1004 {
         if(max > nums.length) max = nums.length; 
         return max;        
     }
+
+    public int longestOnes_best_solution(int[] A, int K) {
+        int i = 0, j;
+        for (j = 0; j < A.length; ++j) {
+            if (A[j] == 0) K--;
+            if (K < 0 && A[i++] == 0) K++;
+        }
+        return j - i;
+    }
 }
 
 class LC1004Test {
