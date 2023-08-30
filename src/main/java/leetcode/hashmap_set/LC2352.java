@@ -4,14 +4,15 @@ public class LC2352 {
     public int equalPairs(int[][] grid) {
         int count = 0;
         for(int i=0; i<grid.length; i++){
-            int tmp = 0;
-            for(int j=0; j<grid[i].length; j++){
-                if(j == 0) tmp = grid[i][j];
-                else if(tmp == grid[i][j]) count++;
-                else tmp = grid[i][j];
+            for(int j = 0; j<grid.length; j++){                
+                boolean matched = true;
+                for(int k=0; k<grid.length; k++){
+                    if(grid[i][k] != grid[k][j]) {matched = false; break;}                    
+                }
+                if(matched) count++;                            
             }
         }
-        return count;   
+        return count; 
     }
 }
 
