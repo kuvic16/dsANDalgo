@@ -20,10 +20,9 @@ public class LC735 {
         }
 
         int[] result = new int[stack.size()];
-        int j = 0;
-        Iterator iterator = stack.iterator();
-        while (iterator.hasNext()) {
-            result[j++] = Integer.valueOf(iterator.next().toString());
+        int j = stack.size() - 1;
+        while (!stack.isEmpty()) {
+            result[j--] = stack.pop();
         }
         return result;
     }
@@ -34,8 +33,8 @@ class LC735Test {
         LC735 lc735 = new LC735();
         //int[] result = lc735.asteroidCollision(new int[]{5,10,-5});
         //int[] result = lc735.asteroidCollision(new int[]{8,-8});
-        int[] result = lc735.asteroidCollision(new int[]{10,2,-5});
-        //int[] result = lc735.asteroidCollision(new int[]{-2,-1,1,2});
+        //int[] result = lc735.asteroidCollision(new int[]{10,2,-5});
+        int[] result = lc735.asteroidCollision(new int[]{-2,-1,1,2});
         //int[] result = lc735.asteroidCollision(new int[]{-2,-2,-2,-2});
         for(int r : result) System.out.print(r + " ");
     }
