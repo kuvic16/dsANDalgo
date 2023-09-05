@@ -9,8 +9,5 @@
         <module name="dsANDalgo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="dsANDalgo" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
