@@ -62,8 +62,8 @@ public class LC649 {
             list.add(senate.charAt(i));
         }
 
-        Character result = null;
-        while(true){
+        boolean victory = false;
+        while(!victory){
             Character prev = null;
             int i=0;
             while(i<list.size()){
@@ -80,10 +80,11 @@ public class LC649 {
                     j++;
                 }
                 i++;
+                if(!found){victory = true; break;}
             }
             break;
         }
-        return "";
+        return list.get(0) == 'R' ? "Radiant" : "Dire";
     }
 }
 
@@ -94,7 +95,8 @@ class LC649Test {
 //        System.out.println(lc649.predictPartyVictory("RDD")); //Dire
 //        System.out.println(lc649.predictPartyVictory("DDRRR")); //Dire
 //        System.out.println(lc649.predictPartyVictory("DDR")); //Dire
-        System.out.println(lc649.predictPartyVictory("DRRDRDRDRDDRDRDR")); //Radiant
+//        System.out.println(lc649.predictPartyVictory("DRRDRDRDRDDRDRDR")); //Radiant
+        System.out.println(lc649.predictPartyVictory("DDRRRR")); //Radiant
     }
 }
 
