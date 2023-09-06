@@ -56,22 +56,23 @@ public class LC649 {
         return r == 'R' ? "Radiant" : "Dire";
     }
 
-    public String predictPartyVictory(String senate) {
+    public String predictPartyVictoryX3(String senate) {
         List<Character> list = new ArrayList<>();
         for(int i=0; i<senate.length(); i++){
             list.add(senate.charAt(i));
         }
-
+        //DDRRRR
         boolean victory = false;
         while(!victory){
             Character prev = null;
             int i=0;
             while(i<list.size()){
-                Character curr = list.get(i);
+                boolean sp = false;
                 int j=0; boolean found = false;
                 while(j<list.size()){
                     if(i != j){
                         if(list.get(i) != list.get(j)){
+                            if(i == list.size()-1) i -= 1;
                             list.remove(j);
                             found = true;
                             break;
@@ -86,6 +87,28 @@ public class LC649 {
         }
         return list.get(0) == 'R' ? "Radiant" : "Dire";
     }
+
+    public String predictPartyVictory(String senate) {
+        char[] s = senate.toCharArray();
+        //DDRRRR
+        boolean victory = false; char r = '0';
+        while(!victory){
+            for(int i=0; i<s.length; i++){
+                if(s[i] == '0') continue;
+                boolean found = false;
+                for(int j=i+1; j<s.length; j++){
+                    if(s[j] != '0' && s[j] != s[i]){s[j] = '0'; found = true; break;}
+                }
+                if(!found && i > 0){
+                    for(int j=0; j<i; j++){
+                        if(s[j] != '0' && s[j] != s[i]){s[j] = '0'; found = true; break;}
+                    }
+                }
+                if(!found){victory = true; r=s[i]; break;}
+            }
+        }
+        return r == 'R' ? "Radiant" : "Dire";
+    }
 }
 
 class LC649Test {
@@ -95,8 +118,8 @@ class LC649Test {
 //        System.out.println(lc649.predictPartyVictory("RDD")); //Dire
 //        System.out.println(lc649.predictPartyVictory("DDRRR")); //Dire
 //        System.out.println(lc649.predictPartyVictory("DDR")); //Dire
-//        System.out.println(lc649.predictPartyVictory("DRRDRDRDRDDRDRDR")); //Radiant
-        System.out.println(lc649.predictPartyVictory("DDRRRR")); //Radiant
+       System.out.println(lc649.predictPartyVictory("DRRDRDRDRDDRDRDR")); //Radiant
+         //System.out.println(lc649.predictPartyVictory("DDRRRR")); //Radiant
     }
 }
 
