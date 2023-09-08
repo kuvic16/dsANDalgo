@@ -6,7 +6,7 @@ import java.util.List;
 import leetcode.common.ListNode;
 
 public class LC2095 {
-    public ListNode deleteMiddle(ListNode head) {
+    public ListNode deleteMiddleX1(ListNode head) {
         List<ListNode> list = new ArrayList<>();
         ListNode tmp = head;
         while(tmp != null){
@@ -28,6 +28,24 @@ public class LC2095 {
         
         return head;
     }
+
+    public ListNode deleteMiddle(ListNode head) {
+        if(head.next == null) return null;
+
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode tmp = head;
+        while(slow != null){
+            slow = slow.next;
+            fast = fast.next != null && fast.next.next != null ? fast.next.next : null;
+            if(fast == null || fast.next == null){
+                tmp.next = slow != null ? slow.next : null;
+                break;
+            }
+            tmp = slow;
+        }
+        return head;
+    }
 }
 
 class LC2095Test{
@@ -42,11 +60,18 @@ class LC2095Test{
 //        ListNode g = new ListNode(1, f);
 //        ListNode result = lc2095.deleteMiddle(g);
 
-        ListNode a = new ListNode(4);
-        ListNode b = new ListNode(3, a);
-        ListNode c = new ListNode(2, b);
-        ListNode d = new ListNode(1, c);
-        ListNode result = lc2095.deleteMiddle(d);
+//        ListNode a = new ListNode(4);
+//        ListNode b = new ListNode(3, a);
+//        ListNode c = new ListNode(2, b);
+//        ListNode d = new ListNode(1, c);
+//        ListNode result = lc2095.deleteMiddle(d);
+
+//        ListNode a = new ListNode(1);
+//        ListNode b = new ListNode(2, a);
+//        ListNode result = lc2095.deleteMiddle(b);
+
+        ListNode a = new ListNode(1);
+        ListNode result = lc2095.deleteMiddle(a);
 
         while(result != null){
             System.out.print(result.val + " ");
