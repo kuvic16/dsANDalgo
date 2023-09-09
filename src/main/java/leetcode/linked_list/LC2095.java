@@ -51,14 +51,14 @@ public class LC2095 {
 class LC2095Test{
     public static void main(String[] args){
         LC2095 lc2095 = new LC2095();
-//        ListNode a = new ListNode(6);
-//        ListNode b = new ListNode(2, a);
-//        ListNode c = new ListNode(1, b);
-//        ListNode d = new ListNode(7, c);
-//        ListNode e = new ListNode(4, d);
-//        ListNode f = new ListNode(3, e);
-//        ListNode g = new ListNode(1, f);
-//        ListNode result = lc2095.deleteMiddle(g);
+       ListNode a = new ListNode(6);
+       ListNode b = new ListNode(2, a);
+       ListNode c = new ListNode(1, b);
+       ListNode d = new ListNode(7, c);
+       ListNode e = new ListNode(4, d);
+       ListNode f = new ListNode(3, e);
+       ListNode g = new ListNode(1, f);
+       ListNode result = lc2095.deleteMiddle(g);
 
 //        ListNode a = new ListNode(4);
 //        ListNode b = new ListNode(3, a);
@@ -70,13 +70,14 @@ class LC2095Test{
 //        ListNode b = new ListNode(2, a);
 //        ListNode result = lc2095.deleteMiddle(b);
 
-        ListNode a = new ListNode(1);
-        ListNode result = lc2095.deleteMiddle(a);
+        // ListNode a = new ListNode(1);
+        // ListNode result = lc2095.deleteMiddle(a);
+        result.print();
 
-        while(result != null){
-            System.out.print(result.val + " ");
-            result = result.next;
-        }
+        // while(result != null){
+        //     System.out.print(result.val + " ");
+        //     result = result.next;
+        // }
 
     }
 }
