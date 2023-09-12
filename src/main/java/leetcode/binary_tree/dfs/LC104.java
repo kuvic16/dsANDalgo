@@ -1,4 +1,4 @@
-package leetcode.binary_tree;
+package leetcode.binary_tree.dfs;
 
 import leetcode.binary_tree.TraverseTree.TreeNode;
 
