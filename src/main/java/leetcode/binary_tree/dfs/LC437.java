@@ -6,6 +6,8 @@ public class LC437 {
 
     int count = 0;
     public int pathSum(TreeNode root, int targetSum) {
+        if(root == null) return 0;
+        if(root.right == null && root.left == null && root.val == targetSum) return 1;
         traverse(root, 0, targetSum, "");
         return count;
     }
@@ -13,30 +15,60 @@ public class LC437 {
     public void traverse(TreeNode node, int sum, int targetSum, String rail){
         if(node == null) return;
 
-        //if((sum + node.val) <= targetSum) sum += node.val;
-        rail += node.val + ">";
-        sum += node.val;
-        if(sum == targetSum){
-            count += 1;
-            //System.out.println(node.val + ": " + sum);
-            //node.left = null;
-            //node.right = null;
+        rail += (rail.isEmpty() ? "" : ",") + node.val;
+        if(node.left == null && node.right == null) {
+            String[] rails = rail.split(",");
+            sum = 0;
+            for (int i = rails.length - 1; i >= 0; i--) {
+                int num = Integer.valueOf(rails[i]);
+                if (num == targetSum) count++;
+                sum += num;
+                if (i < rails.length - 1 && sum == targetSum) {
+                    count += 1;
+                    break;
+                }
+            }
+            System.out.println(node.val + ": " + rail);
         }
-        //else
-        System.out.println(node.val + ": " + sum);
         traverse(node.left, sum, targetSum, rail);
         traverse(node.right, sum, targetSum, rail);
+    }
 
+    public int pathsum3(int[] num){
+        return 0;
     }
 }
 
 class LC437Test{
     public static void main(String[] args){
         LC437 lc437 = new LC437();
-        //TreeNode root = new TreeNode().prepareTree(new Integer[]{10,5,-3,3,2,null,11,3,-2,null,1});
-        //int targetSum = 8;
-        TreeNode root = new TreeNode().prepareTree(new Integer[]{5,4,8,11,null,13,4,7,2,null,null,5,1});
-        int targetSum = 22;
-        System.out.println(lc437.pathSum(root, targetSum));
+        TreeNode root = new TreeNode().prepareTree(new Integer[]{10,5,-3,3,2,null,11,3,-2,null,1});
+        int targetSum = 8;
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{5,4,8,11,null,13,4,7,2,null,null,5,1});
+//        int targetSum = 22;
+
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{1});
+//        int targetSum = 0;
+
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{-2,null,-3});
+//        int targetSum = -5;
+
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{0,1,1});
+//        int targetSum = 1;
+
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{0,1,1});
+//        int targetSum = 0;
+
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{1});
+//        int targetSum = 1;
+
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{1,2});
+//        int targetSum = 1;
+
+//        TreeNode root = new TreeNode().prepareTree(new Integer[]{1,null,2,null,3,null,4,null,5});
+//        int targetSum = 3;
+        //System.out.println(lc437.pathSum(root, targetSum));
+
+        System.out.println(lc437.pathsum3(new int[]{}));
     }
 }
