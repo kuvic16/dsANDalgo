@@ -4,31 +4,34 @@ import leetcode.binary_tree.TraverseTree.TreeNode;
 
 public class LC1372 {
     int max = 0;
-    Boolean isLeft = null;
     public int longestZigZag(TreeNode root) {
-        traverse(root, 0, "");
+        if(root == null) return 0;
+        if(root.left == null && root.right == null) return 0;
+
+        traverse(root, "", "");
         return max;
     }
 
-    public void traverse(TreeNode node, int sum, String rail){
+    public void traverse(TreeNode node, String rail, String dir){
         if(node == null) return;
 
-        rail += node.val + ",";
+        if(!rail.isEmpty()) rail += ",";
+        rail += dir;
 
-        if(isLeft == null && node.left != null){isLeft = true; sum = 1;}
-        else if(isLeft == null && node.right != null){isLeft = false; sum = 1;}
-        else if(isLeft != null && !isLeft && node.left != null){isLeft = true; sum += 1;}
-        else if(isLeft != null && isLeft && node.right != null){isLeft = false; sum += 1;}
-        else {
-            if(sum > max) max = sum;
-            sum = 0;
-            isLeft = null;
+        String[] dirs = rail.split(",");
+        int sum = 0; String prev = "";
+        for(int i=0; i<dirs.length; i++){
+            if(!prev.isEmpty() && !dirs[i].equalsIgnoreCase(prev)) sum += 1;
+            else sum = 1;
+            prev = dirs[i];
         }
+        if(sum > max) max = sum;
         
-        System.out.println(node.val + "(" + rail + "): " + sum + " -> " + isLeft);
+        
+        System.out.println(node.val + "(" + rail + "): , Sum: " + sum);
 
-        traverse(node.left, sum, rail);
-        traverse(node.right, sum, rail);
+        traverse(node.left, rail, "left");
+        traverse(node.right, rail, "right");
     }
 }
 
