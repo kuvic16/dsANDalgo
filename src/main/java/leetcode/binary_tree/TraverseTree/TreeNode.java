@@ -1,5 +1,7 @@
 package leetcode.binary_tree.TraverseTree;
 
+import leetcode.common.ListNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -56,5 +58,12 @@ public class TreeNode {
             }
         }
         return root;
+    }
+
+    public void print(TreeNode node){
+        if(node == null) return;
+        System.out.print(node.val + " ");
+        print(node.left);
+        print(node.right);
     }
 }
