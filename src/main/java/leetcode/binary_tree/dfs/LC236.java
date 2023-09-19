@@ -18,17 +18,26 @@ public class LC236 {
 
     public void traverse(TreeNode node, String rail){
         if(node == null) return;
+        if(pfound && qfound) return;
 
-        if(compare(node, tp)) pfound = true;
-        if(compare(node, tq)) qfound = true;
-        if(pfound == false && qfound == false) t = node;
-        if((pfound || qfound) && t == null) t = node;
-        //if((pfound || qfound) && t != null && node.val != t.val) t = node;
-        
-
-        System.out.println(node.val + ": " + rail);
         traverse(node.left, rail);
         traverse(node.right, rail);
+        if(pfound && qfound) return;
+        System.out.println(node.val + ": " + rail);
+        pfound = false; qfound = false;
+        findChild(node);
+        if(pfound && qfound) {
+            t = node;
+        }
+
+    }
+
+    public void findChild(TreeNode node){
+        if(node == null) return;
+        if(compare(node, tp)) pfound = true;
+        if(compare(node, tq)) qfound = true;
+        findChild(node.left);
+        findChild(node.right);
     }
 
     public boolean compare(TreeNode n1, TreeNode n2) {
@@ -58,13 +67,13 @@ class LC236Test{
         TreeNode p = new TreeNode();
         TreeNode q = new TreeNode();
 
-        // root = root.prepareTree(new Integer[]{3,5,1,6,2,0,8,null,null,7,4});
-        // p = p.prepareTree(new Integer[]{5,6,2,null,null,7,4});
-        // q = q.prepareTree(new Integer[]{1,0,8});
+         root = root.prepareTree(new Integer[]{3,5,1,6,2,0,8,null,null,7,4});
+         p = p.prepareTree(new Integer[]{5,6,2,null,null,7,4});
+         q = q.prepareTree(new Integer[]{1,0,8});
 
-        root = root.prepareTree(new Integer[]{3,5,1,6,2,0,8,null,null,7,4});
-        p = p.prepareTree(new Integer[]{5,6,2,null,null,7,4});
-        q = q.prepareTree(new Integer[]{4});
+//        root = root.prepareTree(new Integer[]{3,5,1,6,2,0,8,null,null,7,4});
+//        p = p.prepareTree(new Integer[]{5,6,2,null,null,7,4});
+//        q = q.prepareTree(new Integer[]{4});
 
 
         TreeNode result = lc236.lowestCommonAncestor(root, p, q);
