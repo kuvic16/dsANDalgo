@@ -3,18 +3,43 @@ package leetcode.binary_tree.bfs;
 import leetcode.binary_tree.TraverseTree.TreeNode;
 
 public class LC450 {
+    public boolean isFound = false;
+    public TreeNode node;
     public TreeNode deleteNode(TreeNode root, int key) {
-        travarse(root, null, key);
-        return root;
+        node = root;
+        travarse(node, null, key, "");
+        return node;
     }
 
-    public void travarse(TreeNode node, TreeNode parent, int key){
+    public void travarse(TreeNode node, TreeNode parent, int key, String dir){
         if(node == null) return;
+        if(isFound) return;
 
-        if()
+        if(node.val == key){
+            if(node.left == null && node.right == null && dir.equalsIgnoreCase("left")) {
+                parent.left = null;
+                isFound = true; return;
+            }
+            if(node.left == null && node.right == null && dir.equalsIgnoreCase("right")) {
+                parent.right = null;
+                isFound = true; return;
+            }
 
-        travarse(node.left, node, key);
-        travarse(node.right, node, key);
+            if(dir.equalsIgnoreCase("left")){
+                parent.left = node.right;
+                parent.left.left = node.left;
+                isFound = true; return;
+            }else{
+                parent.right = node.right;
+                parent.right.right = node.left;
+                isFound = true; return;
+            }
+            
+            
+        }
+
+        travarse(node.left, node, key, "left");
+        travarse(node.right, node, key, "right");
     }
 }
 
