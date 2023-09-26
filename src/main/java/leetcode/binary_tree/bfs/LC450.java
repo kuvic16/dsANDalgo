@@ -31,7 +31,7 @@ public class LC450 {
             if (parent == null && node.right == null && node.left != null) {
                 this.node = node.left;
             }
-            if(parent == null && node.left != null && node.right != null){
+            if(node.left != null && node.right != null){
                 TreeNode left = node.left;
                 TreeNode right = node.right;
 
@@ -40,31 +40,21 @@ public class LC450 {
                     p = right;
                     right = right.left;
                 }
-                this.node = right;
-                this.node.left = left;
-                if(this.node.right == null){
-                    p.left = null;
-                    this.node.right = p;
+                if(parent == null){
+                    this.node = right;
+                    this.node.left = left;
+                    if(this.node.right == null){
+                        p.left = null;
+                        this.node.right = p;
+                    }
+                }else{
+                    parent = right;
+                    parent.left = left;
+                    if(parent.right == null){
+                        p.left = null;
+                        parent.right = p;
+                    }
                 }
-
-            }
-            if(parent != null && node.left != null && node.right != null){
-                TreeNode left = node.left;
-                TreeNode right = node.right;
-
-                if(dir.equalsIgnoreCase("left")) {
-                    parent.left = right;
-                }else parent.right = right;
-
-                TreeNode p = right;
-                while(right.left != null) {
-                    p = right;
-                    right = right.left;
-                }
-                p.left = left;
-                //parent.left.right = p;
-
-
             }
             isFound = true;
             return;
@@ -73,39 +63,6 @@ public class LC450 {
         travarse(node.left, node, key, "left");
         travarse(node.right, node, key, "right");
     }
-
-//    public void travarse(TreeNode node, TreeNode parent, int key, String dir){
-//        if(node == null) return;
-//        if(isFound) return;
-//
-//        if(node.val == key){
-//            if(node.left == null && node.right == null && dir.equalsIgnoreCase("left")) {
-//                parent.left = null;
-//                isFound = true; return;
-//            }
-//            if(node.left == null && node.right == null && dir.equalsIgnoreCase("right")) {
-//                parent.right = null;
-//                isFound = true; return;
-//            }
-//
-//            if(dir.equalsIgnoreCase("left")){
-//                parent.left = node.right;
-//                parent.left.left = node.left;
-//                isFound = true; return;
-//            }else{
-//                parent.right = node.right;
-//                parent.right.right = node.left;
-//                isFound = true; return;
-//            }
-//
-//
-//        }
-//
-//        travarse(node.left, node, key, "left");
-//        travarse(node.right, node, key, "right");
-//    }
-
-
 }
 
 class LC450Test {
