@@ -15,8 +15,6 @@ public class LC841 {
 
     public void traverse(int vertex){
         visited.push(vertex);
-        //System.out.println(vertex + " ");
-
         List<Integer> room = adjLists.get(vertex);
         for(Integer index  : room){
             if(!visited.contains(index)) traverse(index);
