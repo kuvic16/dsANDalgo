@@ -6,6 +6,7 @@ public class LC399 {
 
     Map<String, List<Object[]>> adjList = new HashMap<>();
     double gcost = 1;
+    List<String> visited = new ArrayList<>();
     public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
         for(int i=0; i<equations.size(); i++){
             double value = values[i];
@@ -38,14 +39,15 @@ public class LC399 {
         for(int i=0; i<queries.size(); i++){
             String q1 = queries.get(i).get(0);
             String q2 = queries.get(i).get(1);
-            gcost = 1;
-            traverse(q1, q2, 1, new ArrayList<>());
+            gcost = -1;
+            visited = new ArrayList<>();
+            traverse(q1, q2, 1);
             result[i] = gcost;
         }
         return result;
     }
 
-    public void traverse(String source, String destination, double cost, List<String> visited){
+    public void traverse(String source, String destination, double cost){
         if(!adjList.containsKey(source)) {
             gcost = -1;
             return;
@@ -62,35 +64,11 @@ public class LC399 {
                     gcost = cost * Double.parseDouble(node[1].toString());
                     return;
                 }else {
-                    traverse(String.valueOf(node[0]), destination, cost * Double.parseDouble(node[1].toString()), visited);
+                    traverse(String.valueOf(node[0]), destination, cost * Double.parseDouble(node[1].toString()));
                 }
             }
         }
     }
-
-    public double traverseX(String source, String destination, double cost, List<String> visited){
-        if(!adjList.containsKey(source)) return -1;
-        if(source.equalsIgnoreCase(destination)) return 1;
-
-        visited.add(source);
-        List<Object[]> nodes = adjList.get(source);
-        for(Object[] node : nodes){
-            if(!visited.contains(String.valueOf(node[0]))) {
-                if (String.valueOf(node[0]).equalsIgnoreCase(destination)) {
-                    System.out.println("R: " + cost * Double.parseDouble(node[1].toString()));
-                    cost *= Double.parseDouble(node[1].toString());
-                }
-                else {
-                    System.out.println("C: " + cost * Double.parseDouble(node[1].toString()));
-                    traverse(String.valueOf(node[0]), destination, cost * Double.parseDouble(node[1].toString()), visited);
-                }
-            }
-        }
-        System.out.println("L: " + source + ">>" + cost);
-        return cost;
-    }
-
-
 
     public static void main(String[] args){
         LC399 lc399 = new LC399();
