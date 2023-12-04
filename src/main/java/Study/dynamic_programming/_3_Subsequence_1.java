@@ -1,5 +1,7 @@
 package Study.dynamic_programming;
 
+import java.util.HashMap;
+
 /**
  * Create a subset from given integer
  * Input: 2
@@ -7,18 +9,29 @@ package Study.dynamic_programming;
  */
 public class _3_Subsequence_1 {
     int max;
-    public void subset(int n, String r){
+    int maxLevel;
+    HashMap<Integer, String> memo = new HashMap<>();
+
+    public void subset(int n, String r, int level){
         if(n > max) return;
+        if(level > maxLevel) return;
         r = r + " " + n;
-        System.out.println(r);
-        for(int i=n+1; i<= max; i++)
-            subset(i, r);
+        if(level == maxLevel) {
+            System.out.println("Level: " + level + "- " + r);
+        }
+        for(int i=n+1; i<max; i++) {
+            if (level <= maxLevel) {
+                subset(i, r, level + 1);
+            }
+        }
     }
 
     public static void main(String[] args){
         _3_Subsequence_1 subsequence = new _3_Subsequence_1();
-        subsequence.max = 3;
-        for(int i=0; i<= subsequence.max; i++)
-        subsequence.subset(i, "");
+        subsequence.max = 5;
+        subsequence.maxLevel = 3;
+
+        for(int i=0; i<subsequence.max; i++)
+        subsequence.subset(i, "", 1);
     }
 }
