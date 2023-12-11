@@ -21,7 +21,7 @@ public class _3_Subsequence_1 {
         }
         for(int i=n+1; i<max; i++) {
             if (level <= maxLevel) {
-                subset(i, r, level + 1);
+                subset(n+1, r, level + 1);
             }
         }
     }
