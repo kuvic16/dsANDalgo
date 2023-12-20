@@ -3,28 +3,57 @@ package leetcode.heap_priority_queue;
 import java.util.PriorityQueue;
 
 public class LC2462 {
+
+    /**
+     * Calculates the total cost of selecting candidates from the given array of costs
+     * based on the specified constraints.
+     *
+     * @param costs      An array representing the costs of candidates.
+     * @param k          The total number of candidates to select.
+     * @param candidates The number of candidates to select in each iteration.
+     * @return The total cost of selecting candidates based on the given constraints.
+     */
     public long totalCost(int[] costs, int k, int candidates) {
+        // Priority queues to store the costs of candidates on the left and right sides.
         PriorityQueue<Integer> leftQueue = new PriorityQueue<>();
         PriorityQueue<Integer> rightQueue = new PriorityQueue<>();
-        int R=0, L=costs.length-1; long sum = 0;
-        for(int i=0; i<k; i++){
-            while (leftQueue.size() < candidates && R <= L){
+
+        // Pointers for iterating through the costs array from both ends.
+        int R = 0, L = costs.length - 1;
+
+        // Variable to store the total cost.
+        long sum = 0;
+
+        // Iterate for the total number of candidates to be selected (k).
+        for (int i = 0; i < k; i++) {
+            // Populate the leftQueue with costs from the left side.
+            while (leftQueue.size() < candidates && R <= L) {
                 leftQueue.add(costs[R]);
                 R++;
             }
 
-            while (rightQueue.size() < candidates && L >= R){
+            // Populate the rightQueue with costs from the right side.
+            while (rightQueue.size() < candidates && L >= R) {
                 rightQueue.add(costs[L]);
                 L--;
             }
 
-            if(leftQueue.size() > 0 && rightQueue.size() == 0) sum += leftQueue.poll();
-            else if(rightQueue.size() > 0 && leftQueue.size() == 0) sum += rightQueue.poll();
-            else if(leftQueue.peek() <= rightQueue.peek()) sum += leftQueue.poll();
-            else sum += rightQueue.poll();
+            // Select the candidate with the minimum cost from either leftQueue or rightQueue.
+            if (leftQueue.size() > 0 && rightQueue.size() == 0) {
+                sum += leftQueue.poll();
+            } else if (rightQueue.size() > 0 && leftQueue.size() == 0) {
+                sum += rightQueue.poll();
+            } else if (leftQueue.peek() <= rightQueue.peek()) {
+                sum += leftQueue.poll();
+            } else {
+                sum += rightQueue.poll();
+            }
         }
+
+        // Return the total cost of selecting candidates.
         return sum;
     }
+
 
     public static void main(String[] args){
         LC2462 lc2462 = new LC2462();
