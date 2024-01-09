@@ -11,16 +11,19 @@ public class LC875 {
         int min = 0;
         int min_h = Integer.MAX_VALUE;
         int th = 0;
+        int mid = max;
         while(max - min > 1){
-            int mid = (max + min)/2;
 
             th = getHour(piles, mid);
-            //System.out.println(mid + ": " + th);
+            System.out.println(mid + ": " + th);
 
-            if(th == h && min_h > mid) min_h = mid;
-            if(th < h) max = mid - 1;
-            else if(th > h) min = mid;
-            else min = min + 1;
+            if(th <= h && min_h > mid) min_h = mid;
+            if(th <= h) max = mid;
+            //else if(th > h) min = mid;
+            else min = mid;
+            //else min = min + 1;
+
+            mid = min + (max - min)/2;
         }
 
 
@@ -53,14 +56,17 @@ public class LC875 {
 //        piles = new int[]{30,11,23,4,20};
 //        h = 5;
 
-        piles = new int[]{30,11,23,4,20};
-        h = 6;
-
+//        piles = new int[]{30,11,23,4,20};
+//        h = 6;
+//
 //        piles = new int[]{312884470};
 //        h = 312884469;
 //
 //        piles = new int[]{10};
 //        h = 9;
+
+        piles = new int[]{1000000000,1000000000};
+        h = 3;
 
         System.out.println(lc875.minEatingSpeed(piles, h));
     }
