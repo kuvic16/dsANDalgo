@@ -16,12 +16,33 @@ public class LC17 {
             {"w", "x", "y", "z"}
     };
     List<String> result = new ArrayList<>();
-    public List<String> letterCombinations(String digits) {
+    char[] lt = {};
 
+    public List<String> letterCombinations(String digits) {
+        lt = digits.toCharArray();
+        List<String> sets = new ArrayList<>();
+        traverse(0, sets);
         return result;
     }
 
-    public
+    public void traverse(int index, List<String> sets){
+        if(index >= lt.length) return;
+
+        String[] ls = letters[Character.getNumericValue(lt[index]) - 2];
+        for(String s : ls){
+            sets.add(s);
+            //for(String ss : sets) System.out.print(ss + ">");
+            if(sets.size() == lt.length) {
+                StringBuilder ns = new StringBuilder();
+                for (String ss : sets) ns.append(ss);
+                result.add(ns.toString());
+            }
+            traverse(index+1, sets);
+            sets.remove(sets.size() - 1);
+        }
+    }
+
+
 
     public static void main(String[] args){
         LC17 lc17 = new LC17();
