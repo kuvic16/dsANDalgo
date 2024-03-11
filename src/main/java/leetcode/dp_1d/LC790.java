@@ -3,11 +3,11 @@ package leetcode.dp_1d;
 public class LC790 {
     int sum = 0;
     int fillcount = 0;
-    int total_pattern = 2;
+    int total_pattern = 6;
     int t = 0;
      public int numTilings(int n) {
         t  = n;
-        for(int i=0; i<1; i++){
+        for(int i=2; i<=2; i++){
             tilings(0, i, new int[2][n]);
         }
         return sum;
@@ -16,7 +16,6 @@ public class LC790 {
     public void tilings(int col, int pattern, int[][] tiles){
         if(fillcount == t * 2)  {
             sum += 1;
-            fillcount = 0;
             return;
         }
         if(col >= t || pattern == total_pattern) return;
@@ -40,17 +39,54 @@ public class LC790 {
             }
             col+=2;
         }
+        else if(pattern == 2 && col+1 < t){
+            if(tiles[0][col] == 0 && tiles[0][col+1] == 0 && tiles[1][col] == 0) {
+                tiles[0][col] = 1;
+                tiles[0][col+1] = 1;
+                tiles[1][col] = 1;
+                fillcount += 3;
+            }
+            col++;
+        }
+        else if(pattern == 3 && col+1 < t){
+            if(tiles[0][col] == 0 && tiles[1][col+1] == 0 && tiles[1][col] == 0) {
+                tiles[0][col] = 1;
+                tiles[1][col+1] = 1;
+                tiles[1][col] = 1;
+                fillcount += 3;
+            }
+            col++;
+        }
+        else if(pattern == 4 && col-1 >= 0){
+            if(tiles[0][col] == 0 && tiles[1][col] == 0 && tiles[1][col-1] == 0) {
+                tiles[0][col] = 1;
+                tiles[1][col] = 1;
+                tiles[1][col-1] = 1;
+                fillcount += 3;
+            }
+            col++;
+        }
+        else if(pattern == 5 && col-1 >= 0){
+            if(tiles[0][col] == 0 && tiles[1][col] == 0 && tiles[0][col-1] == 0) {
+                tiles[0][col] = 1;
+                tiles[1][col] = 1;
+                tiles[0][col-1] = 1;
+                fillcount += 3;
+            }
+            col++;
+        }
         else{
             return;
         }
 
-        for(int i=0; i<total_pattern; i++){
+        for(int i=2; i<total_pattern; i++){
             tilings(col, i, tiles);
+            if(col < t){
+                System.out.println("column: " + col + ", pattern: " + i);
+                if(tiles[0][col] == 1){tiles[0][col] = 0; fillcount -= 1;}
+                if(tiles[1][col] == 1){tiles[1][col] = 0; fillcount -= 1;}
+            }
         }
-//        for(int j=col; j<t; j++){
-//            tiles[0][j] = 0;
-//            tiles[1][j] = 0;
-//        }
     }
 
 
