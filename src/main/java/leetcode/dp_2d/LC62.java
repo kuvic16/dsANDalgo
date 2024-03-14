@@ -5,7 +5,7 @@ public class LC62 {
     int _m = 0;
     int _n = 0;
     int sum = 0;
-    int[][] disk = new int[3][2];
+    int[][] disk = new int[100][100];
     public int uniquePaths(int m, int n) {
         _m = m; _n = n;
         nextMove(0, 0);
@@ -22,19 +22,22 @@ public class LC62 {
         if(_m-1 == i && _n-1 == j) {sum += 1; return 1;}
         if(_m <= i || _n <= j) return 0;
 
-        int r = nextMove(i, j+1);
-        if(r == 1) {
-            System.out.println("i: " + i + ", j: " + j);
-            disk[i][j+1] += 1;
-            return 1;
+        if(disk[i][j] == 0) {
+            int r = nextMove(i, j + 1);
+            if (r == 1) {
+                //System.out.println("i: " + i + ", j: " + j);
+                disk[i][j + 1] += 1;
+                //return 1;
+            }
+            int b = nextMove(i + 1, j);
+            if (b == 1) {
+                //System.out.println("i: " + i + ", j: " + j);
+                disk[i + 1][j] += 1;
+                //return 1;
+            }
+            return r+b;
         }
-        int b = nextMove(i+1, j);
-        if(b == 1) {
-            System.out.println("i: " + i + ", j: " + j);
-            disk[i+1][j] += 1;
-            return 1;
-        }
-        return 0;
+        return disk[i][j];
     }
 
     public static void main(String[] args){
