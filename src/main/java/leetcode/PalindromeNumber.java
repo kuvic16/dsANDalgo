@@ -12,12 +12,11 @@ public class PalindromeNumber {
         String s = String.valueOf(x);
         int j = s.length() - 1;
         for(int i=0; i<s.length()/2; i++){
-            System.out.println(s.charAt(i) + "==" + s.charAt(j));
-            if(s.charAt(i)))
+            //System.out.println(s.charAt(i) + "==" + s.charAt(j));
+            if(s.charAt(i) != s.charAt(j)) return false;
             j--;
         }
-
-        return false;
+        return true;
     }
 }
 
@@ -25,7 +24,7 @@ class PalindromeNumberTest {
     public static void main(String[] args) throws FileNotFoundException {
         PalindromeNumber palindromeNumber = new PalindromeNumber();
 
-        boolean result = palindromeNumber.isPalindrome(12210);
+        boolean result = palindromeNumber.isPalindrome(10);
         System.out.println(result);
     }
 }
