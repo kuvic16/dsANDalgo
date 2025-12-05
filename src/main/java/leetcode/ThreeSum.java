@@ -14,10 +14,10 @@ public class ThreeSum {
         int a, b, c = 0;
         for(int i=0; i<nums.length && i + 2 <nums.length; i++){
             a = nums[i];
-            b = nums[i+1];
+
             for(int j = i+2; j<nums.length; j++){
                 c = nums[j];
-                System.out.println(a + "," + b + "," + c);
+                //System.out.println(a + "," + b + "," + c);
 //                if(a + b + c == 0) {
 //                    triplet = new ArrayList<>();
 //                    triplet.add(a);
