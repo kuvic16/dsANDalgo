@@ -51,6 +51,28 @@ public class TwoSum {
 
         return result;
     }
+
+    public int[] find3(int[] nums, int target) {
+        int[] result = new int[2];
+        if(nums == null || nums.length < 2) {
+            return result;
+        }
+
+        int left = 0, right = nums.length - 1;
+        while(left < right){
+            int sum = nums[left] + nums[right];
+            if(sum == target){
+                result[0] = left;
+                result[1] = right;
+                break;
+            } if(sum > target){
+                right--;
+            }else{
+                left++;
+            }
+        }
+        return result;
+    }
 }
 class TwoSumTest {
     public static void main(String[] args) throws FileNotFoundException {
