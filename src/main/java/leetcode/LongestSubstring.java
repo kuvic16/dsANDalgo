@@ -10,6 +10,24 @@ public class LongestSubstring {
         // abcabcbb
         // abba
         // dvdf
+        HashMap<Character, Integer> map = new HashMap<>();
+        int left = 0, maxLength = 0;
+        for(int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
+            if(map.containsKey(c)){
+                left = Math.max(map.get(c) + 1, left);
+            }
+            map.put(c, i);
+            maxLength = Math.max(maxLength, i - left + 1);
+        }
+        return maxLength;
+    }
+
+    public int lengthOfLongestSubstring1(String s) {
+
+        // abcabcbb
+        // abba
+        // dvdf
         int left = 0, length = 0, maxLength = 0;
         for(int i=0; i<s.length(); i++){
             String sub = s.substring(left, i);
