@@ -18,19 +18,21 @@ public class LC424 {
         HashMap<Character, Integer> map = new HashMap<>();
 
         for(Character c : s.toCharArray()){
-            //map.put(c, map.getOrDefault(c, 0) + 1);
-            map.put('S', 1);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+            //map.put('S', 1);
         }
 
         int right = 0, left = 0, count = 0, max = 1, kc = 0;
         // AABABBABBB
         // AAAB
         // SDSSMESSTR
+        // IMNJJTRMJEGMSOLSCCQICIHLQIOGBJAEHQOCRAJQMBIBATGLJDTBNCPIFRDLRIJHRABBJGQAOLIKRLHDRIGERENNMJSDSSMESSTR
+        // AABA
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
             // System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
             char lc = entry.getKey();
             right = 0; left = -1; count = 0; kc = 0;
-            
+            Queue<Integer> leftQ = new ArrayDeque<>();
             while(right < s.length()){
                 if(lc == s.charAt(right)){
                     count +=1;
@@ -38,11 +40,12 @@ public class LC424 {
                 } else if(lc != s.charAt(right) && kc < k){
                     count +=1;
                     kc +=1;
-                    if(left == -1) left = right;
-                    else left = Math.min(left, right);
+                    //left = right;
+                    if(!leftQ.contains(right)) leftQ.add(right);
                     right +=1;
-                } else if(lc != s.charAt(right) && kc >= k && left != -1){
-                    right = left + 1;
+                } else if(lc != s.charAt(right) && kc >= k){
+                    //right = left + 1;
+                    right = !leftQ.isEmpty() ? leftQ.poll() + 1 : right + 1;
                     max = Math.max(count, max);
                     kc = 0;
                     count = 0;
@@ -82,14 +85,14 @@ class LC424Test {
     public static void main(String[] args) throws FileNotFoundException {
         LC424 lc424 = new LC424();
 
-        //String s = "ABAB"; int k = 2;
+        String s = "ABAB"; int k = 2;
         //String s = "AABABBABBB"; int k = 1;
         //String s = "ABBB"; int k = 2;
         // String s = "ABBBABBAABBBBvvvvvvvvBBB"; int k = 2;
         //String s = "AAAB"; int k = 0;
         // String s = "AABA"; int k = 0;
         //String s = "IMNJJTRMJEGMSOLSCCQICIHLQIOGBJAEHQOCRAJQMBIBATGLJDTBNCPIFRDLRIJHRABBJGQAOLIKRLHDRIGERENNMJSDSSMESSTR"; int k = 2;
-        String s = "SDSSMESSTR"; int k = 2;
+        //String s = "SDSSMESSTR"; int k = 2;
         int result = lc424.characterReplacement(s, k);
         System.out.println(result);
     }
