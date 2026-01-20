@@ -23,15 +23,10 @@ public class LC1652 {
             result[0] = ksum;
             for (int i = 1; i < code.length; i++) {
                 if (i-1+k+code.length < code.length) ksum = ksum + code[i-1] - code[i-1+k+code.length];
-                else ksum = ksum - code[i] - code[code.length - i -1 -k];
+                else ksum = ksum + code[i-1] - code[i  - 1 + k];
                 result[i] = ksum;
             }
-
-            // [2,4,9,3], k = -2 1 -2 = -1 + 4 = 3 1-1-2+4 =2 2-1-2+4 = 3 3-1-2+4=4 4-1
-            //
-            // 1 - (-2) - 3 = 0
         }
-
         return result;
     }
 }
@@ -39,10 +34,10 @@ public class LC1652 {
 class LC1652Test {
     public static void main(String[] args){
         LC1652 lc1652 = new LC1652();
-//        int[] code = {5,7,1,4};
-//        int k = 3;
-        int[] code = {2,4,9,3};
-        int k = -2;
+//        int k = 3; int[] code = {5,7,1,4};
+//        int k = -2; int[] code = {2,4,9,3};
+        int k = -4; int[] code = {10,5,7,7,3,2,10,3,6,9,1,6};
+
         int[] result = lc1652.decrypt(code, k);
         for(int i : result) System.out.print(i + " ");
     }
