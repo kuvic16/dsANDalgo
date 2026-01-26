@@ -19,6 +19,7 @@ public class LC424i {
         int count = 0, kcount = 0, max = Integer.MIN_VALUE, n=s.length();
         char[] curs = s.toCharArray();
         for(int i=0; i<n; i++){
+            if(i != 0 && curs[i] == curs[i-1]) continue;
             count = 1; kcount = 0;
             for(int j= i+1; j<n; j++){
                 if(curs[i] == curs[j]) count++;
