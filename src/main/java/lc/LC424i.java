@@ -13,6 +13,21 @@ public class LC424i {
     // AABABAA
     // ABBB
     // AABABBABBB
+    /*
+    How consensus (intuition) actually forms
+
+    Not by thinking harder.
+
+    But by repeating this cycle:
+
+    1. Write brute force
+    2. Ask: what am I recomputing?
+    3. Ask: what property stays true?
+    4. Compress logic into an invariant
+    5. Memorize that invariant as a pattern
+
+    Do this 10–15 times per pattern, and intuition appears.
+     */
     public int characterReplacement(String s, int k) {
         if(s.length() <= 1) return s.length();
 
