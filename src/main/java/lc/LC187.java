@@ -7,14 +7,12 @@ public class LC187 {
     public List<String> findRepeatedDnaSequences(String s) {
         HashMap<String, Integer> map = new HashMap<>();
         HashMap<String, Integer> unq = new HashMap<>();
-        for(int i=0; i<s.length(); i++){
-            if(s.length() - i >= 10) {
-                String sub = s.substring(i, i + 10);
-                if (map.containsKey(sub)) {
-                    unq.put(sub, 1);
-                }else{
-                    map.put(sub, 1);
-                }
+        for(int i=0; i<s.length() && s.length() - i >= 10; i++){
+            String sub = s.substring(i, i + 10);
+            if (map.containsKey(sub)) {
+                unq.put(sub, 1);
+            }else{
+                map.put(sub, 1);
             }
         }
         return new ArrayList<>(unq.keySet());
