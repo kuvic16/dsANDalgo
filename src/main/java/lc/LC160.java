@@ -4,12 +4,13 @@ import leetcode.common.ListNode;
 
 public class LC160 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        while (headA != null){
-
-            while (headB != null){
-            if(headA.val == headB.val) return headA;
+        while(headA != null){
+            ListNode tempNode = headB;
+            while(tempNode != null){
+                if(headA == tempNode) return tempNode;
+                tempNode = tempNode.next;
+            }
             headA = headA.next;
-            headB = headB.next;
         }
         return new ListNode(0);
     }
