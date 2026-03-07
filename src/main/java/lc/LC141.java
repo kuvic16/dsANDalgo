@@ -3,11 +3,16 @@ package lc;
 import leetcode.binary_tree.TraverseTree.TreeNode;
 import leetcode.common.ListNode;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
 public class LC141 {
     public boolean hasCycle(ListNode head) {
-
+        HashMap<ListNode, Integer> map = new LinkedHashMap<>();
         while(head != null){
-
+            if(map.containsKey(head)) return true;
+            map.put(head, 1);
+            head = head.next;
         }
         return false;
     }
