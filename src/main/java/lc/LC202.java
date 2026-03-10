@@ -7,12 +7,13 @@ import java.util.List;
 public class LC202 {
     public boolean isHappy(int n) {
         HashMap<Integer, Integer> map = new HashMap<>();
-        //if(n == 1) return true;
+        if(n == 1) return true;
+        if(n == 0) return false;
         //if(n < 10) return false;
         while (n > 0){
             int sum = 0;
             if(map.containsKey(n)){
-                sum = map.get(n);
+                return false;
             }else{
                 int temp = n;
                 while (temp > 0) {
@@ -24,6 +25,7 @@ public class LC202 {
             }
             if(sum == 1) return true;
             n = sum;
+            System.out.println(sum);
         }
         return false;
     }
@@ -33,7 +35,7 @@ class LC202Test {
     public static void main(String[] args) {
         LC202 lc202 = new LC202();
         //int n = 19;
-        int n = 2;
+        int n = 15;
         boolean result = lc202.isHappy(n);
         System.out.println(result);
     }
